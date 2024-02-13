@@ -105,7 +105,7 @@ const Hero = () => {
     }, [])
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5 mt-12 md:mt-[7svh] relative -z-10">
+    <div className="flex flex-col justify-center items-center gap-5 mt-12 md:mt-[7svh]">
       <Content id="animate" />
       <CTAButtons id="animate" />
       <img src={HeroImg} title="Toddoo Dashboard" alt="Toddoo Dashboard" className="mt-12 md:mt-20" id="animate" />
