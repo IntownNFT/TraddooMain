@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className="max-w-[1300px] w-full mx-auto">
+        <Outlet />
+      </div>
       Footer
     </>
   );
