@@ -51,7 +51,7 @@ const LogoLink = () => {
         height={26}
         className="bg-light-grey rounded-lg"
       />
-      <span className="text-xl">Toddoo</span>
+      <span className="text-xl">Traddoo</span>
     </a>
   );
 };
