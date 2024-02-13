@@ -8,6 +8,7 @@ interface menu_link {
 }
 const MenuLink = ({ link }: { link: menu_link }) => {
   useGSAP(() => {
+    if(!document.querySelector("#link")) return;
     gsap.fromTo(
       "#link",
       {
