@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Fonts */
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.font-kanit {
+  font-family: "Raleway", sans-serif;
+}
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
