@@ -17,6 +17,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
+    if(!menuRef.current) return;
     gsap.fromTo(
       menuRef.current,
       {
@@ -28,6 +29,18 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
         opacity: 1,
         ease: "easein",
         duration: 0.5,
+      }
+    );
+    if(!document.querySelector("#get-started")) return;
+    gsap.fromTo(
+      "#get-started",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        delay: 1.2,
+        duration: 0.1,
       }
     );
   }, [open]);
@@ -56,7 +69,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
           {links.map((link, index) => (
             <MenuLink key={index} link={link} />
           ))}
-          <Button path="/" variant="primary" classes="font-inter text-xl mt-5">
+          <Button path="/" variant="primary" id="get-started" classes="font-inter text-xl mt-5">
             Start Trading
           </Button>
         </div>
