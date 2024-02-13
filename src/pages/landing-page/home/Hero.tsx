@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 const Content = ({id}:{id?:string}) => {
   return (
     <>
-      <h1 className="font-raleway font-extrabold text-5xl sm:text-6xl md:text-[80px] -tracking-[2.55px] md:-tracking-[4.55px] leading-tight md:leading-[91px] text-center max-w-[900px] mx-auto" id={id}>
+      <h1 className="font-raleway font-extrabold text-5xl sm:text-6xl md:text-[80px] -tracking-[2.55px] md:-tracking-[4.55px] leading-tight md:leading-[91px] text-center max-w-[900px] mx-auto text-balance md:text-wrap" id={id}>
         Grow your Trading Edge with{" "}
         <span className="text-blue">Real Capital</span>
       </h1>
