@@ -1,10 +1,20 @@
-function App() {
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <h1>Home</h1>,
+  },
+]);
+
+function App() {
   return (
-    <div className="font-bold underline">
-      Home Page
-    </div>
-  )
+    <>
+      Navbar
+      <RouterProvider router={router} />
+      Footer
+    </>
+  );
 }
 
-export default App
+export default App;
