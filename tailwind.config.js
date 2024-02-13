@@ -15,6 +15,9 @@ export default {
         "red": "#EFA411",
         "light-green": "#FFF281",
         "off-white": "#FCFCFC"
+      },
+      screens: {
+        '2xl': '1536px',
       }
     },
   },

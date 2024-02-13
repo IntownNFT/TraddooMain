@@ -1,17 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <h1>Home</h1>,
-  },
-]);
+import Header from "./components/header/Header";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      Navbar
-      <RouterProvider router={router} />
+      <Header />
+      <Outlet />
       Footer
     </>
   );
