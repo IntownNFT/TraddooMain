@@ -27,9 +27,31 @@
 .font-raleway {
   font-family: "Raleway", sans-serif;
 }
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Body */
 body {
   background-color: #0F0F0F;
   color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #0F0F0F;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #0F0F0F;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(255,255,255,0.3);
+  border-radius: 20px;
 }
