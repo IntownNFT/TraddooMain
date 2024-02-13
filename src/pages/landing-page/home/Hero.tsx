@@ -2,6 +2,10 @@ import Button from "../../../components/Button";
 import HeroImg from "../../../assets/landing-page/home/dashboard.png"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Content = ({id}:{id?:string}) => {
   return (
@@ -31,6 +35,61 @@ const CTAButtons = ({id}:{id?:string}) => {
   );
 };
 
+
+const Stat = ({ title, stat, id }: {title:string, stat:string, id?:string}) => {
+    return (
+        <div className="flex flex-col items-center gap-3" id={id}>
+            <h3 className="font-kanit font-semibold text-2xl text-blue">{title}</h3>
+            <p className="font-montserrat font-semibold text-4xl">{stat}</p>
+        </div>
+    )
+}
+
+const stats = [
+    {
+        title: "Total Traders",
+        stat: "3349"
+    },
+    {
+        title: "Total Funded",
+        stat: "33"
+    },
+    {
+        title: "Total Funded",
+        stat: "$173,668"
+    },
+]
+
+const Stats = () => {
+
+    useGSAP(()=> {
+        if(!document.querySelector("#animate-stat")) return;
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#animate-stat",
+            },
+        })
+        timeline.fromTo("#animate-stat", {
+            y: 50,
+            opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
+            stagger: 0.1,
+        })
+    }, [])
+
+    const statsRef = useRef<HTMLDivElement>(null)
+
+    return (
+        <div className="flex justify-center items-center gap-5 sm:gap-10 lg:gap-40 flex-wrap py-10 px-5 md:px-20 bg-dark-grey rounded-lg border border-light-grey mt-5" ref={statsRef}>
+            {stats.map((stat_, index)=> (
+                <Stat key={index} title={stat_.title} stat={stat_.stat} id="animate-stat" />
+            ))}
+        </div>
+    )
+}
+
 const Hero = () => {
 
     useGSAP(()=> {
@@ -50,6 +109,7 @@ const Hero = () => {
       <Content id="animate" />
       <CTAButtons id="animate" />
       <img src={HeroImg} title="Toddoo Dashboard" alt="Toddoo Dashboard" className="mt-12 md:mt-20" id="animate" />
+      <Stats />
     </div>
   );
 };
