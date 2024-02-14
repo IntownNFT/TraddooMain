@@ -1,4 +1,4 @@
-import FireIcon from "../../../assets/landing-page/home/fire.svg";
+import FireIcon from "../../../assets/landing-page/fire.svg";
 import NotimeIcon from "../../../assets/landing-page/home/paperplane.svg";
 import FundedIcon from "../../../assets/landing-page/home/heirarchy.svg";
 import PayoutIcon from "../../../assets/landing-page/home/exit.svg";
