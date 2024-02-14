@@ -1,8 +1,8 @@
-import Card from "./Card";
 import FireIcon from "../../../assets/landing-page/home/fire.svg";
 import NotimeIcon from "../../../assets/landing-page/home/paperplane.svg";
 import FundedIcon from "../../../assets/landing-page/home/heirarchy.svg";
 import PayoutIcon from "../../../assets/landing-page/home/exit.svg";
+import Grid from "./Grid";
 
 const cards = [
   {
@@ -38,15 +38,6 @@ const cards = [
   },
 ];
 
-const Grid = () => {
-  return (
-    <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10">
-      {cards.map((card, index) => (
-        <Card card_info={card} key={index} />
-      ))}
-    </div>
-  );
-};
 
 const Content = () => {
   return (
@@ -54,7 +45,7 @@ const Content = () => {
       <h2 className="font-raleway font-bold text-5xl text-center -tracking-[2.75px] text-balance">
         The Future of Prop Firm Funding Programs
       </h2>
-      <p className="font-inter text-lg text-center text-[#A7AFBB] max-w-[670px] mx-auto">
+      <p className="font-inter text-lg text-center text-[#A7AFBB] max-w-[670px] mx-auto mb-5">
         The only funding company with built in scaling programs, providing full
         transparency all the way to payout.
       </p>
@@ -64,9 +55,9 @@ const Content = () => {
 
 const Future = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6">
       <Content />
-      <Grid />
+      <Grid cards={cards} />
     </div>
   );
 };
