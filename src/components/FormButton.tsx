@@ -5,7 +5,7 @@ const FormButton = ({
 }: {
   type: "submit" | "reset" | "button" | undefined;
   text: string;
-  classes: string;
+  classes?: string;
 }) => {
   return (
     <button
