@@ -3,6 +3,7 @@ import NotimeIcon from "../../../assets/landing-page/home/paperplane.svg";
 import FundedIcon from "../../../assets/landing-page/home/heirarchy.svg";
 import PayoutIcon from "../../../assets/landing-page/home/exit.svg";
 import Grid from "./Grid";
+import SectionHeader from "../../../components/SectionHeader";
 
 const cards = [
   {
@@ -18,7 +19,8 @@ const cards = [
   {
     icon: FireIcon,
     title: "Tight Spreads",
-    description: "Industry leading spreads provided by industry leading providers",
+    description:
+      "Industry leading spreads provided by industry leading providers",
   },
   {
     icon: PayoutIcon,
@@ -26,23 +28,15 @@ const cards = [
     description: "Choose between Think markets or Tradelocker",
   },
 ];
-const Content = () => {
-  return (
-    <>
-      <h2 className="font-raleway font-bold text-5xl text-center -tracking-[2.75px] text-balance leading-[55px]">
-        Leading the Frontier
-      </h2>
-      <p className="font-inter text-lg text-center text-[#A7AFBB] max-w-[670px] mx-auto mb-5">
-        All the essentials for your trading. Experience the best execution with
-        tight spreads and a multi trading platform experience.
-      </p>
-    </>
-  );
-};
+
 const Features = () => {
   return (
     <div className="flex flex-col gap-3">
-      <Content />
+      <SectionHeader
+        title="Leading the Frontier"
+        subtitle="All the essentials for your trading. Experience the best execution with
+        tight spreads and a multi trading platform experience."
+      />
       <Grid cards={cards} />
     </div>
   );
