@@ -1,6 +1,6 @@
 import Logo from "../../../assets/logo-big.png";
 import { Checkbox } from "@material-tailwind/react";
-import FormButton from "./Button";
+import FormButton from "../../../components/FormButton";
 
 
 const FormContent = () => {
