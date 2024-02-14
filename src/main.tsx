@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/landing-page/home/index.tsx";
 import Competitions from "./pages/landing-page/competitions/index.tsx";
+import Rules from "./pages/landing-page/rules/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/competition",
         element: <Competitions />
+      },
+      {
+        path: "/rules",
+        element: <Rules />
       },
     ]
   },
