@@ -1,0 +1,44 @@
+{
+  "row1": {
+    "name": "Trading Period",
+    "step1": "Unlimited",
+    "step2": "Unlimited",
+    "step3": "X"
+  },
+  "row2":{
+    "name": "Minimum Trading Days",
+    "step1": "0 days",
+    "step2": "0 days",
+    "step3": "X"
+  },
+  "row3":{
+    "name": "Maximum Daily Loss",
+    "step1": "$5 000 (5%)",
+    "step2": "$5 000 (5%)",
+    "step3": "$5 000 (5%)"
+  },
+  "row4":{
+    "name": "Maximum Loss",
+    "step1": "$8 000 (8%)",
+    "step2": "$8 000 (8%)",
+    "step3": "$8 000 (8%)"
+  },
+  "row5":{
+    "name": "Profit Target",
+    "step1": "$10 000 (10%)",
+    "step2": "$8 000 (8%)",
+    "step3": "X"
+  },
+  "row6":{
+    "name": "Account Leverage",
+    "step1": "1:100 Max",
+    "step2": "1:100 Max",
+    "step3": "1:100 Max"
+  },
+  "row7":{
+    "name": "Refundable Fee",
+    "step1": "X",
+    "step2": "X",
+    "step3": "$397"
+  }
+}
