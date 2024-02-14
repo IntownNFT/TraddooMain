@@ -26,7 +26,7 @@ const MenuLink = ({ link }: { link: menu_link }) => {
   });
   return (
     <Link
-      to="/"
+      to={link.path}
       className="text-[#A8A8A8] hover:text-white transition-colors"
       id="link"
     >
