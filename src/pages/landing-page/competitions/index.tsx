@@ -1,7 +1,6 @@
+import FAQs from "../../../components/FAQs";
 import SectionHeader from "../../../components/SectionHeader";
-import Squeezebox from "../../../components/SqueezeBox";
 import Card from "./Card";
-import * as FaqData from "../faqs.json"
 
 const CompetitionsData = [
   {
@@ -64,23 +63,6 @@ const Grid = () => {
     </div>
   );
 };
-
-const data = Object.values(FaqData)[1]
-
-const FAQs = () => {
-    return (
-        <div className="flex flex-col gap-8 mt-9">
-            {
-                data.map((faq, index) => (
-                    <>
-                    <Squeezebox title={faq.question} description={faq.answer} key={index} />
-                    <Squeezebox title={faq.question} description={faq.answer} key={index} />
-                    </>
-                ))
-            }
-        </div>
-    )
-}
 
 const Competitions = () => {
   return (
