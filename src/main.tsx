@@ -7,6 +7,7 @@ import Home from "./pages/landing-page/home/index.tsx";
 import Competitions from "./pages/landing-page/competitions/index.tsx";
 import Rules from "./pages/landing-page/rules/index.tsx";
 import ContactUs from "./pages/landing-page/contact/index.tsx";
+import PrivayPolicy from "./pages/landing-page/privacy-policy/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivayPolicy />
       },
     ]
   },
