@@ -6,8 +6,8 @@ const SubscriptionForm = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <GlowCapture className="md:p-16">
-      <Glow color="rgba(54, 113, 233, 0.1)">
+    <GlowCapture size={1300} className="md:p-16">
+      <Glow color="rgba(0, 0, 255, 0.13)">
         <div className="py-16 px-5 bg-dark-grey border-4 border-light-grey rounded-lg glowable-text">
           <div>
             <h3 className="font-raleway font-bold text-center text-3xl md:text-5xl">
@@ -34,7 +34,7 @@ const SubscriptionForm = () => {
             <FormButton
               type="submit"
               text="Join"
-              classes="max-w-2xl rounded-md bg-blue backdrop:blur-xl hover:bg-opacity-30"
+              classes="max-w-2xl text-white rounded-md bg-blue backdrop:blur-xl hover:bg-opacity-30"
             />
           </div>
         </div>

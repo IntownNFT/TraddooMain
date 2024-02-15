@@ -86,7 +86,6 @@ body {
 
 .glowable-text {
   color: white;
-  cursor: none;
 }
 
 [glow] .glowable-text {
