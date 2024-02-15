@@ -19,7 +19,7 @@
   font-family: "Ubuntu", sans-serif;
 }
 .font-kanit {
-  font-family: "Raleway", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 .font-rubik {
   font-family: "Rubik", sans-serif;
@@ -29,6 +29,9 @@
 }
 .font-montserrat {
   font-family: "Montserrat", sans-serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
 }
 
 /* Body */
@@ -58,4 +61,31 @@ body {
 
 #table::-webkit-scrollbar{
   height: 4px;
+}
+
+/* Markdown Styles */
+#markdown {
+  font-family: 'Poppins', sans-serif;
+}
+#markdown h2{
+  font-weight: 500;
+  font-size: 46px;
+  margin-bottom: 20px;
+  @media (max-width: 450px) {
+    font-size: 32px;
+  }
+}
+#markdown p, #markdown li {
+  list-style-type:decimal;
+  font-size: 20px;
+  @media (max-width: 450px) {
+    font-size: 16px;
+  }
+}
+#markdown li {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#markdown a {
+  text-decoration: underline;
 }

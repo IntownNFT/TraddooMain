@@ -4,20 +4,8 @@ import Table from "./Table";
 import * as t1_row_data from "./Table1Rows.json";
 import { useState } from "react";
 import StartChallengeForm from "./ChallengeForm";
+import SectionHeader from "../../../components/SectionHeader";
 
-const Content = () => {
-  return (
-    <>
-      <h2 className="font-raleway font-bold text-5xl text-center -tracking-[2.75px] text-balance leading-[55px]">
-        Choose your Challenge
-      </h2>
-      <p className="font-inter text-lg text-center text-[#A7AFBB] max-w-[670px] mx-auto mb-5">
-        Before we allow you to trade with us, we need to be sure that you can
-        manage risk. For this reason, we developed Trading Objectives.
-      </p>
-    </>
-  );
-};
 
 const Reminder = () => {
   return (
@@ -61,7 +49,6 @@ const TABLE_HEAD = [
   },
 ];
 
-
 const TABLE_ROWS = Object.values(t1_row_data);
 
 const Challenge = () => {
@@ -69,7 +56,11 @@ const Challenge = () => {
   const [activeType, setActiveType] = useState(0);
   return (
     <div className="flex flex-col gap-3">
-      <Content />
+      <SectionHeader
+        title="Choose your Challenge"
+        subtitle="Before we allow you to trade with us, we need to be sure that you can
+        manage risk. For this reason, we developed Trading Objectives."
+      />
       <div className="flex flex-col gap-8">
         <div className="flex items-start flex-wrap lg:flex-nowrap">
           <StepperContainer
