@@ -6,9 +6,9 @@ const SubscriptionForm = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <GlowCapture className="p-16">
+    <GlowCapture className="md:p-16">
       <Glow color="rgba(54, 113, 233, 0.1)">
-        <div className="py-16 bg-dark-grey border-4 border-light-grey rounded-lg glowable-text">
+        <div className="py-16 px-5 bg-dark-grey border-4 border-light-grey rounded-lg glowable-text">
           <div>
             <h3 className="font-raleway font-bold text-center text-3xl md:text-5xl">
               Join Our {" "}

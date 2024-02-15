@@ -27,7 +27,7 @@ const Partners = () => {
   }, []);
   return (
     <div>
-      <h2 className="font-raleway font-bold text-center text-3xl sm:text-5xl">
+      <h2 className="font-raleway font-bold text-center text-5xl">
         Our Partners
       </h2>
       <p className="text-[#717171] text-center text-balance mt-5 mb-16 text-2xl">
@@ -45,7 +45,7 @@ const Partners = () => {
                 alt="partner"
                 width={143}
                 height={114}
-                className="rounded-[20px] filter saturate-0 contrast-75 opacity-75 hover:scale-105 hover:opacity-100 hover:saturate-100 hover:contrast-100 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,0.1)] transition-all"
+                className="rounded-[20px] saturate-0 contrast-75 opacity-75 hover:scale-105 hover:opacity-100 hover:saturate-100 hover:contrast-100 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,0.1)] transition-all"
               />
             </li>
           ))}
