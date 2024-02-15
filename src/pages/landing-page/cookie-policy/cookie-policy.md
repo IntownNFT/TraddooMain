@@ -1,4 +1,6 @@
-﻿Data Protection & Cookies
+﻿## Cookie Policy
+
+Data Protection & Cookies
 
 We utilize cookies to allow you to remember your choices and give you a better-tailored experience. While presenting content, advertisements, and other functionalities on the https://funderpro.com/ website (the "Website") various technologies are used to collect and process personal data, including cookies.
 
