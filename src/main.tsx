@@ -9,6 +9,7 @@ import Rules from "./pages/landing-page/rules/index.tsx";
 import ContactUs from "./pages/landing-page/contact/index.tsx";
 import PrivayPolicy from "./pages/landing-page/privacy-policy/index.tsx";
 import CookiePolicy from "./pages/landing-page/cookie-policy/index.tsx";
+import TermsAndConditions from "./pages/landing-page/terms-and-conditions/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/cookie-policy",
         element: <CookiePolicy />
+      },
+      {
+        path: "/terms-of-use",
+        element: <TermsAndConditions />
       },
     ]
   },
