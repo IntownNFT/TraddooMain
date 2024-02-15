@@ -10,6 +10,7 @@ import ContactUs from "./pages/landing-page/contact/index.tsx";
 import PrivayPolicy from "./pages/landing-page/privacy-policy/index.tsx";
 import CookiePolicy from "./pages/landing-page/cookie-policy/index.tsx";
 import TermsAndConditions from "./pages/landing-page/terms-and-conditions/index.tsx";
+import ReturnPolicy from "./pages/landing-page/return-policy/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/terms-of-use",
         element: <TermsAndConditions />
+      },
+      {
+        path: "/return-policy",
+        element: <ReturnPolicy />
       },
     ]
   },
