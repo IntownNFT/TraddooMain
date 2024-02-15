@@ -18,7 +18,7 @@ const footerLinks = [
   },
   {
     text: "Cookies Policy",
-    link: "/cookies-policy",
+    link: "/cookie-policy",
   },
   {
     text: "Terms of Use",
