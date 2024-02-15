@@ -59,6 +59,7 @@ const ContactForm = () => {
   const phoneRef = useRef<HTMLInputElement>(null);
   const msgRef = useRef<HTMLTextAreaElement>(null);
   const [subject, setSubject] = useState("")
+  console.log(subject)
   return (
     <form className="w-full max-w-[806px] mx-auto bg-dark-grey border border-light-grey rounded-lg font-poppins flex flex-col justify-center items-stretch gap-6 py-6 px-3 sm:p-6">
       <div className="flex gap-6 flex-wrap ">
