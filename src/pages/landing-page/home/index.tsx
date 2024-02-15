@@ -1,7 +1,8 @@
-import Challenge from "./Challenge"
-import Features from "./Features"
-import Future from "./Future"
-import Hero from "./Hero"
+import Challenge from "./Challenge";
+import Features from "./Features";
+import Future from "./Future";
+import Hero from "./Hero";
+import SubscriptionForm from "./SubscriptionForm";
 
 const Home = () => {
   return (
@@ -10,8 +11,9 @@ const Home = () => {
       <Future />
       <Challenge />
       <Features />
+      <SubscriptionForm />
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
