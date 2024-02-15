@@ -8,6 +8,7 @@ import Competitions from "./pages/landing-page/competitions/index.tsx";
 import Rules from "./pages/landing-page/rules/index.tsx";
 import ContactUs from "./pages/landing-page/contact/index.tsx";
 import PrivayPolicy from "./pages/landing-page/privacy-policy/index.tsx";
+import CookiePolicy from "./pages/landing-page/cookie-policy/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <PrivayPolicy />
+      },
+      {
+        path: "/cookie-policy",
+        element: <CookiePolicy />
       },
     ]
   },

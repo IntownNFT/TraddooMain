@@ -75,11 +75,16 @@ body {
     font-size: 32px;
   }
 }
-#markdown p {
+#markdown p, #markdown li {
+  list-style-type:decimal;
   font-size: 20px;
   @media (max-width: 450px) {
     font-size: 16px;
   }
+}
+#markdown li {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 #markdown a {
   text-decoration: underline;
