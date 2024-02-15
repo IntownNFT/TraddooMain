@@ -3,7 +3,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import ArrowIcon from "../assets/landing-page/arrow.svg";
 
 interface SqueezeboxData {

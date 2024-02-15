@@ -13,13 +13,13 @@ const TermsAndConditions = () => {
   }, []);
 
   const renderers = {
-    a: ({ href, children }:{href:string|undefined; children:JSX.Element|string}) => (
-      <a href={href || "#"} target="_blank" rel="noopener noreferrer">
+    a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+      <a href={href || "#"} target="_blank" rel="noopener noreferrer" {...props}>
         {children}
       </a>
     ),
   };
-
+  
   return (
     <main className="mt-16">
       <SectionHeader
