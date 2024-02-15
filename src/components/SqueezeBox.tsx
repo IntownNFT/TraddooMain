@@ -7,24 +7,13 @@ import { Fragment, useState } from "react";
 import ArrowIcon from "../assets/landing-page/arrow.svg";
 
 interface SqueezeboxData {
-  title: string;
-  description: string;
+  title: JSX.Element;
+  description: JSX.Element;
 }
 const Squeezebox = ({ title, description }: SqueezeboxData) => {
   const [open, setOpen] = useState(0);
 
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
-
-  const renderWithLineBreaks = (text:string) => {
-    const textWithLineBreaks = text.split('\n').map((item, key) => (
-      <Fragment key={key}>
-        {item}
-        <br />
-      </Fragment>
-    ));
-
-    return <div>{textWithLineBreaks}</div>;
-  };
 
   return (
     <>
@@ -48,7 +37,7 @@ const Squeezebox = ({ title, description }: SqueezeboxData) => {
           />
         </AccordionHeader>
         <AccordionBody className="pt-10 font-kanit font-normal text-base sm:text-xl text-white leading-[36px]">
-          {renderWithLineBreaks(description)}
+          {description}
         </AccordionBody>
       </Accordion>
     </>

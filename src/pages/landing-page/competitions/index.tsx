@@ -1,4 +1,4 @@
-import FAQs from "../../../components/FAQs";
+import FAQs from "../../../components/FAQ/FAQs";
 import SectionHeader from "../../../components/SectionHeader";
 import Card from "./Card";
 
