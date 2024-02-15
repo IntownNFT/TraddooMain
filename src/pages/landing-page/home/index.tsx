@@ -2,6 +2,7 @@ import Challenge from "./Challenge";
 import Features from "./Features";
 import Future from "./Future";
 import Hero from "./Hero";
+import Partners from "./Partners";
 import SubscriptionForm from "./SubscriptionForm";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Future />
       <Challenge />
       <Features />
+      <Partners />
       <SubscriptionForm />
     </main>
   );
