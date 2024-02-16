@@ -58,13 +58,10 @@ const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}
   ];
 
   const size_steps = [
-    {
-      title: "$10k",
-      isPopular: false,
-    },
     { title: "$25k", isPopular: false },
     { title: "$50k", isPopular: false },
     { title: "$100k", isPopular: true },
+    { title: "$150k", isPopular: false },
     { title: "$200k", isPopular: false },
   ];
 

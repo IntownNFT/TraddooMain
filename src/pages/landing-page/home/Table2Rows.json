@@ -1,44 +1,342 @@
 {
-    "row1": {
-      "name": "Trading Period",
-      "step1": "Unlimited",
-      "step2": "Unlimited",
-      "step3": "X"
-    },
-    "row2":{
-      "name": "Minimum Trading Days",
-      "step1": "0 days",
-      "step2": "0 days",
-      "step3": "X"
-    },
-    "row3":{
-      "name": "Maximum Daily Loss",
-      "step1": "$5 000 (5%)",
-      "step2": "$5 000 (5%)",
-      "step3": "$5 000 (5%)"
-    },
-    "row4":{
-      "name": "Maximum Loss",
-      "step1": "$8 000 (8%)",
-      "step2": "$8 000 (8%)",
-      "step3": "$8 000 (8%)"
-    },
-    "row5":{
+  "t2_25k": [
+    {
       "name": "Profit Target",
-      "step1": "$10 000 (10%)",
-      "step2": "$8 000 (8%)",
-      "step3": "X"
+      "evaluationPhase1": "12%",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
     },
-    "row6":{
-      "name": "Account Leverage",
-      "step1": "1:100 Max",
-      "step2": "1:100 Max",
-      "step3": "1:100 Max"
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
     },
-    "row7":{
-      "name": "Refundable Fee",
-      "step1": "X",
-      "step2": "X",
-      "step3": "$397"
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$8,000 (4%)",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "$10,000 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$14,000 (7%)",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "$20,000 (10%)"
+    },
+    {
+      "name": "Max Lots",
+      "evaluationPhase1": "-",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:50",
+      "verificationPhase2": "up to 1:200",
+      "fundedSTPAccount": "up to 1:50"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "Yes -60%",
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$989",
+      "verificationPhase2": "Free",
+      "fundedSTPAccount": "Refund"
+    },
+    {
+      "name": "Add-ons available",
+      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
+      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
+      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
-  }
+  ],
+  "t2_50k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "10%",
+      "verificationPhase2": "8%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "verificationPhase2": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "verificationPhase2": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$2,500 (5%)",
+      "verificationPhase2": "$2,500 (5%)",
+      "fundedSTPAccount": "$2,500 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$5,000 (10%)",
+      "verificationPhase2": "$5,000 (10%)",
+      "fundedSTPAccount": "$5,000 (10%)"
+    },
+    {
+      "name": "Max Lots",
+      "evaluationPhase1": "-",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:200",
+      "verificationPhase2": "up to 1:200",
+      "fundedSTPAccount": "up to 1:200"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "Yes",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$349",
+      "verificationPhase2": "Free",
+      "fundedSTPAccount": "Refund"
+    },
+    {
+      "name": "Add-ons available",
+      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
+      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
+      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
+    }
+  ],
+  "t2_100k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "10%",
+      "verificationPhase2": "8%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "verificationPhase2": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "verificationPhase2": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$5,000 (5%)",
+      "verificationPhase2": "$5,000 (5%)",
+      "fundedSTPAccount": "$5,000 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$10,000 (10%)",
+      "verificationPhase2": "$10,000 (10%)",
+      "fundedSTPAccount": "$10,000 (10%)"
+    },
+    {
+      "name": "Max Lots",
+      "evaluationPhase1": "-",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:200",
+      "verificationPhase2": "up to 1:200",
+      "fundedSTPAccount": "up to 1:200"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "Yes",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$549",
+      "verificationPhase2": "Free",
+      "fundedSTPAccount": "Refund"
+    },
+    {
+      "name": "Add-ons available",
+      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
+      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
+      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
+    }
+  ],
+  "t2_150k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "10%",
+      "verificationPhase2": "8%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "verificationPhase2": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "verificationPhase2": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$7,500 (5%)",
+      "verificationPhase2": "$7,500 (5%)",
+      "fundedSTPAccount": "$7,500 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$15,000 (10%)",
+      "verificationPhase2": "$15,000 (10%)",
+      "fundedSTPAccount": "$15,000 (10%)"
+    },
+    {
+      "name": "Max Lots",
+      "evaluationPhase1": "-",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:200",
+      "verificationPhase2": "up to 1:200",
+      "fundedSTPAccount": "up to 1:200"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "Yes",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$749",
+      "verificationPhase2": "Free",
+      "fundedSTPAccount": "Refund"
+    },
+    {
+      "name": "Add-ons available",
+      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
+      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
+      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
+    }
+  ],
+  "t2_200k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "10%",
+      "verificationPhase2": "8%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "verificationPhase2": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "verificationPhase2": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$10,000 (5%)",
+      "verificationPhase2": "$10,000 (5%)",
+      "fundedSTPAccount": "$10,000 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$20,000 (10%)",
+      "verificationPhase2": "$20,000 (10%)",
+      "fundedSTPAccount": "$20,000 (10%)"
+    },
+    {
+      "name": "Max Lots",
+      "evaluationPhase1": "-",
+      "verificationPhase2": "-",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:200",
+      "verificationPhase2": "up to 1:200",
+      "fundedSTPAccount": "up to 1:200"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "No",
+      "verificationPhase2": "No",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$989",
+      "verificationPhase2": "Free",
+      "fundedSTPAccount": "No Refund"
+    },
+    {
+      "name": "Add-ons available",
+      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
+      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
+      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
+    }
+  ]
+}

@@ -2,10 +2,11 @@ import StepperContainer from "./Stepper";
 import StarIcon from "../../../assets/landing-page/home/star.svg";
 import Table from "./Table";
 import * as t1_row_data from "./Table1Rows.json";
-import { useState } from "react";
+import * as t2_row_data from "./Table2Rows.json";
+import * as t3_row_data from "./Table3Rows.json";
+import { useEffect, useState } from "react";
 import StartChallengeForm from "./ChallengeForm";
 import SectionHeader from "../../../components/SectionHeader";
-
 
 const Reminder = () => {
   return (
@@ -30,30 +31,76 @@ const Reminder = () => {
   );
 };
 
-const TABLE_HEAD = [
-  {
-    title: "",
-    subtitle: "",
-  },
-  {
-    title: "Step 1",
-    subtitle: "Challenge",
-  },
-  {
-    title: "Step 2",
-    subtitle: "Verification",
-  },
-  {
-    title: "Funded",
-    subtitle: "Trader",
-  },
-];
+type RowDataItem = {
+  name: string;
+  evaluationPhase1: string;
+  verificationPhase2?: string;
+  fundedSTPAccount: string;
+};
 
-const TABLE_ROWS = Object.values(t1_row_data);
+
+type RowData = {
+  [key: string]: RowDataItem[];
+}
+
+const t1rowData: RowData = t1_row_data as RowData;
+const t2rowData: RowData = t2_row_data as RowData;
+const t3rowData: RowData = t3_row_data as RowData;
 
 const Challenge = () => {
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
+  const [tableHead, setTableHead] = useState([""]);
+  const [tableRows, setTableRows] = useState<RowDataItem[]>([]);
+
+  useEffect(() => {
+
+    // Set Header
+    switch (activeType) {
+      case 0:
+        setTableHead([" ", "Evaluation Phase 1", "Funded STP Account"]);
+        break;
+      default:
+        setTableHead([" ", "Evaluation Phase 1", "Verification Phase 2", "Funded STP Account"]);
+        break;
+    }
+
+    // Set Rows
+    let selectedAmount = ""
+    switch (activeSize) {
+      case 0:
+        selectedAmount = "25k"
+        break;
+      case 1:
+        selectedAmount = "50k"
+        break;
+      case 2:
+        selectedAmount = "100k"
+        break;
+      case 3:
+        selectedAmount = "150k"
+        break;
+      case 4:
+        selectedAmount = "200k"
+        break;
+    }
+    
+    const data = `t${activeType + 1}_${selectedAmount}`;
+    switch(activeType) {
+      case 0:
+        setTableRows(t1rowData[data] as RowDataItem[]);
+        break;
+      case 1:
+        setTableRows(t2rowData[data] as RowDataItem[]);
+        break;
+      case 2:
+        setTableRows(t3rowData[data] as RowDataItem[]);
+        break;
+    }
+    console.log(data)
+
+  }, [activeSize, activeType]);
+
   return (
     <div className="flex flex-col gap-3">
       <SectionHeader
@@ -72,7 +119,7 @@ const Challenge = () => {
           <Reminder />
         </div>
         <div className="flex items-stretch gap-6 flex-wrap lg:flex-nowrap">
-          <Table TABLE_HEAD={TABLE_HEAD} TABLE_ROWS={TABLE_ROWS.slice(1)} />
+          <Table TABLE_HEAD={tableHead} TABLE_ROWS={tableRows} />
           <StartChallengeForm />
         </div>
       </div>
