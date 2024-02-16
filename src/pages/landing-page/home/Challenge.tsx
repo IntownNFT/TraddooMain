@@ -52,6 +52,7 @@ const Challenge = () => {
   const [activeType, setActiveType] = useState(0);
   const [tableHead, setTableHead] = useState([""]);
   const [tableRows, setTableRows] = useState<RowDataItem[]>([]);
+  const [price, setPrice] = useState("")
 
   useEffect(() => {
 
@@ -97,9 +98,20 @@ const Challenge = () => {
         setTableRows(t3rowData[data] as RowDataItem[]);
         break;
     }
-    console.log(data)
 
   }, [activeSize, activeType]);
+
+  useEffect(()=> {
+    let row = 0;
+    if (activeType===0) {
+      if (activeSize<=2) row = 8;
+      else row = 9;
+    }
+    else row = 9;
+
+    setPrice(tableRows[row]?.evaluationPhase1)
+  }, [activeSize, activeType, tableRows])
+
 
   return (
     <div className="flex flex-col gap-3">
@@ -120,7 +132,7 @@ const Challenge = () => {
         </div>
         <div className="flex items-stretch gap-6 flex-wrap lg:flex-nowrap">
           <Table TABLE_HEAD={tableHead} TABLE_ROWS={tableRows} />
-          <StartChallengeForm />
+          <StartChallengeForm activeType={activeType} activeSize={activeSize} price={price} />
         </div>
       </div>
     </div>
