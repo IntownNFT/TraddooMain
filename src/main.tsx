@@ -20,41 +20,41 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
-      {
-        path: "/competition",
-        element: <Competitions />
-      },
-      {
-        path: "/rewards",
-        element: <Rewards />
-      },
-      {
-        path: "/rules",
-        element: <Rules />
-      },
-      {
-        path: "/contact",
-        element: <ContactUs />
-      },
-      {
-        path: "/privacy-policy",
-        element: <PrivayPolicy />
-      },
-      {
-        path: "/cookie-policy",
-        element: <CookiePolicy />
-      },
-      {
-        path: "/terms-of-use",
-        element: <TermsAndConditions />
-      },
-      {
-        path: "/return-policy",
-        element: <ReturnPolicy />
-      },
-    ]
+    ],
+  },
+  {
+    path: "/competition",
+    element: <Competitions />,
+  },
+  // {
+  //   path: "/rewards",
+  //   element: <Rewards />,
+  // },
+  {
+    path: "/rules",
+    element: <Rules />,
+  },
+  {
+    path: "/contact",
+    element: <ContactUs />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <PrivayPolicy />,
+  },
+  {
+    path: "/cookie-policy",
+    element: <CookiePolicy />,
+  },
+  {
+    path: "/terms-of-use",
+    element: <TermsAndConditions />,
+  },
+  {
+    path: "/return-policy",
+    element: <ReturnPolicy />,
   },
 ]);
 
