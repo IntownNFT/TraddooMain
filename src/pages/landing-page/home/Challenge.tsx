@@ -23,9 +23,8 @@ const Reminder = () => {
         </span>
       </h4>
       <p className="font-rubik text-[#93A1A6] mt-2">
-        Please ensure that you fully understand the risks involved, taking into
-        account your investment objectives and level of experience, before
-        trading.
+        CFDs are complex instruments and come with a high risk of losing money.
+        71% of retail investor lose when trading CFDs with Traddoo, LTD.
       </p>
     </div>
   );
@@ -38,10 +37,9 @@ type RowDataItem = {
   fundedSTPAccount: string;
 };
 
-
 type RowData = {
   [key: string]: RowDataItem[];
-}
+};
 
 const t1rowData: RowData = t1_row_data as RowData;
 const t2rowData: RowData = t2_row_data as RowData;
@@ -52,42 +50,46 @@ const Challenge = () => {
   const [activeType, setActiveType] = useState(0);
   const [tableHead, setTableHead] = useState([""]);
   const [tableRows, setTableRows] = useState<RowDataItem[]>([]);
-  const [price, setPrice] = useState("")
+  const [price, setPrice] = useState("");
 
   useEffect(() => {
-
     // Set Header
     switch (activeType) {
       case 0:
         setTableHead([" ", "Evaluation Phase 1", "Funded STP Account"]);
         break;
       default:
-        setTableHead([" ", "Evaluation Phase 1", "Verification Phase 2", "Funded STP Account"]);
+        setTableHead([
+          " ",
+          "Evaluation Phase 1",
+          "Verification Phase 2",
+          "Funded STP Account",
+        ]);
         break;
     }
 
     // Set Rows
-    let selectedAmount = ""
+    let selectedAmount = "";
     switch (activeSize) {
       case 0:
-        selectedAmount = "25k"
+        selectedAmount = "25k";
         break;
       case 1:
-        selectedAmount = "50k"
+        selectedAmount = "50k";
         break;
       case 2:
-        selectedAmount = "100k"
+        selectedAmount = "100k";
         break;
       case 3:
-        selectedAmount = "150k"
+        selectedAmount = "150k";
         break;
       case 4:
-        selectedAmount = "200k"
+        selectedAmount = "200k";
         break;
     }
-    
+
     const data = `t${activeType + 1}_${selectedAmount}`;
-    switch(activeType) {
+    switch (activeType) {
       case 0:
         setTableRows(t1rowData[data] as RowDataItem[]);
         break;
@@ -98,20 +100,17 @@ const Challenge = () => {
         setTableRows(t3rowData[data] as RowDataItem[]);
         break;
     }
-
   }, [activeSize, activeType]);
 
-  useEffect(()=> {
+  useEffect(() => {
     let row = 0;
-    if (activeType===0) {
-      if (activeSize<=2) row = 8;
+    if (activeType === 0) {
+      if (activeSize <= 2) row = 8;
       else row = 9;
-    }
-    else row = 9;
+    } else row = 9;
 
-    setPrice(tableRows[row]?.evaluationPhase1)
-  }, [activeSize, activeType, tableRows])
-
+    setPrice(tableRows[row]?.evaluationPhase1);
+  }, [activeSize, activeType, tableRows]);
 
   return (
     <div className="flex flex-col gap-3">
@@ -132,7 +131,11 @@ const Challenge = () => {
         </div>
         <div className="flex items-stretch gap-6 flex-wrap lg:flex-nowrap">
           <Table TABLE_HEAD={tableHead} TABLE_ROWS={tableRows} />
-          <StartChallengeForm activeType={activeType} activeSize={activeSize} price={price} />
+          <StartChallengeForm
+            activeType={activeType}
+            activeSize={activeSize}
+            price={price}
+          />
         </div>
       </div>
     </div>
