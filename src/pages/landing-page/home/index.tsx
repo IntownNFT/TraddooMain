@@ -3,7 +3,7 @@ import Features from "./Features";
 import Future from "./Future";
 import Hero from "./Hero";
 import Partners from "./Partners";
-import SubscriptionForm from "./SubscriptionForm";
+import Newsletter from "./Newsletter";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -38,7 +38,7 @@ const Home = () => {
       <Challenge />
       <Features />
       <Partners />
-      <SubscriptionForm />
+      <Newsletter />
     </main>
   );
 };
