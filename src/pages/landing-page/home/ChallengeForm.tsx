@@ -150,7 +150,7 @@ const StartChallengeForm = ({ activeType, activeSize, price }: ChallengeProps) =
     <ChallengeContext.Provider value={{activeType, activeSize, price}}>
       <div className="bg-dark-grey border border-light-grey rounded-[14px] w-full lg:max-w-[410px]">
         <div className="border-b border-light-grey flex justify-center">
-          <img src={Logo} title="Traddoo Logo" alt="Traddoo logo" width={200} />
+          <img src={Logo} title="Traddoo Logo" alt="Traddoo logo" width={200} height={200} />
         </div>
         <Form />
       </div>
