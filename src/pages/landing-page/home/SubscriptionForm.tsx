@@ -8,13 +8,12 @@ const SubscriptionForm = () => {
   return (
     <GlowCapture size={1300} className="md:p-16">
       <Glow color="rgba(0, 0, 255, 0.13)">
-        <div className="py-16 px-5 bg-dark-grey border-4 border-light-grey rounded-lg glowable-text">
+        <div className="py-16 px-5 bg-dark-grey border border-light-grey rounded-lg glowable-text">
           <div>
             <h3 className="font-raleway font-bold text-center text-3xl md:text-5xl">
-              Join Our {" "}
-              <span className="text-blue">Newsletter <span className="text-3xl md:text-5xl translate-y-2 material-symbols-rounded">
+              Join Our Newsletter <span className="text-blue text-3xl md:text-5xl translate-y-2 material-symbols-rounded">
                 mark_email_unread
-              </span></span>
+              </span>
             </h3>
             <p className="mt-5 mb-12 font-inter text-xl text-center max-w-xl mx-auto text-balance text-[#717171]">
               Experience the best execution with tight spreads and a multi

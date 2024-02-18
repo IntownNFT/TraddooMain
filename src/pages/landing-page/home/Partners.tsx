@@ -45,7 +45,7 @@ const Partners = () => {
                 alt="partner"
                 width={143}
                 height={114}
-                className="rounded-[20px] saturate-0 contrast-75 opacity-75"
+                className="rounded-[20px]"
               />
             </li>
           ))}
