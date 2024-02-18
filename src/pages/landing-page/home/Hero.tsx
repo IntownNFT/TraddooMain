@@ -107,7 +107,7 @@ const Hero = () => {
     <div className="flex flex-col justify-center items-center gap-5 mt-12 md:mt-[7svh]">
       <Content id="animate" />
       <CTAButtons id="animate" />
-      <img src={HeroImg} title="Toddoo Dashboard" width={1300} height={1300} alt="Toddoo Dashboard" className="mt-12 md:mt-20" loading="lazy" />
+      <img src={HeroImg} title="Toddoo Dashboard" width={1300} height={1300} alt="Toddoo Dashboard" className="mt-12 md:mt-20" />
       <Stats />
     </div>
   );
