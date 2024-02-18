@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 import Squeezebox from "../SqueezeBox";
-import file from "./FAQs_Traddoo.md";
 import Markdown from "react-markdown";
 
-const FAQs = () => {
+const FAQs = ({file}:{file:RequestInfo | URL}) => {
   const [markdown, setMarkdown] = useState("");
   const [structuredMd, setStructuredMd] = useState([""]);
-
+  
   useEffect(() => {
     fetch(file)
-      .then((res) => res.text())
-      .then((text) => setMarkdown(text));
+    .then((res) => res.text())
+    .then((text) => setMarkdown(text));
     setStructuredMd(markdown.split("{thisisquestion}"));
-  }, [markdown]);
-
-  console.log(structuredMd[9]?.split("\n>\n"));
+  }, [file, markdown]);
+  
+  console.log(structuredMd);
 
   const renderers = {
     a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
@@ -27,7 +26,8 @@ const FAQs = () => {
   return (
     <div className="flex flex-col gap-8 mt-9">
       {structuredMd.slice(1).map((md, index) => {
-        const faq = md?.split("\n>\n")
+        const normalizedMd = md.replace(/\r\n/g, '\n')
+        const faq = normalizedMd?.split("\n>\n")
         const question = faq[0]
         const answer = faq[1]
         return (

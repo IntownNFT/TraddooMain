@@ -1,5 +1,6 @@
 import FAQs from '../../../components/FAQ/FAQs'
 import SectionHeader from '../../../components/SectionHeader'
+import file from "./FAQs_Traddoo.md";
 
 
 const Rules = () => {
@@ -10,7 +11,7 @@ const Rules = () => {
         subtitle="Traddoo is built and designed to offer the greatest experience for our traders. It's simple, be a consistent and disciplined trader."
         subtitleStyles="font-poppins font-medium text-[#717171] mt-3"
       />
-      <FAQs />
+      <FAQs file={file} />
     </main>
   )
 }

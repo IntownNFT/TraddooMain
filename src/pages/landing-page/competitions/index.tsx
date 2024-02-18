@@ -1,6 +1,7 @@
 import FAQs from "../../../components/FAQ/FAQs";
 import SectionHeader from "../../../components/SectionHeader";
 import Card from "./Card";
+import rules from "./rules.md"
 
 const CompetitionsData = [
   {
@@ -79,7 +80,7 @@ const Competitions = () => {
         titleStyles="mt-24"
         subtitleStyles="font-poppins font-medium text-[#717171] mt-3"
       />
-      <FAQs />
+      <FAQs file={rules} />
     </main>
   );
 };
