@@ -1,9 +1,9 @@
-import Logo1 from "../../../assets/landing-page/partners/tradelocker.jpg";
+import Logo1 from "../../../assets/landing-page/partners/tradelocker.webp";
 import Logo2 from "../../../assets/landing-page/partners/thinkmasters.webp";
-import Logo3 from "../../../assets/landing-page/partners/funderpro.png";
-import Logo4 from "../../../assets/landing-page/partners/redacre.png";
-import Logo5 from "../../../assets/landing-page/partners/propfirm.png";
-import Logo6 from "../../../assets/landing-page/partners/cryptochill.png";
+import Logo3 from "../../../assets/landing-page/partners/funderpro.webp";
+import Logo4 from "../../../assets/landing-page/partners/redacre.webp";
+import Logo5 from "../../../assets/landing-page/partners/propfirm.webp";
+import Logo6 from "../../../assets/landing-page/partners/cryptochill.webp";
 import { useEffect, useRef } from "react";
 
 const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
