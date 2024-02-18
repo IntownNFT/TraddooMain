@@ -31,8 +31,6 @@ export default withMT({
       } 
     },
   },
-  plugins: [
-    import('@codaworks/react-glow/tailwind')
-  ],
+  plugins: [],
 })
 
