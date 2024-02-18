@@ -31,22 +31,10 @@
       "fundedSTPAccount": "$2,500 (10%)"
     },
     {
-      "name": "Max Lots",
-      "evaluationPhase1": "2.5",
-      "verificationPhase2": "2.5",
-      "fundedSTPAccount": "2.5"
-    },
-    {
       "name": "Challenge Leverage",
       "evaluationPhase1": "up to 1:30",
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
-      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Hold Over Weekend & News Trading",
@@ -59,12 +47,6 @@
       "evaluationPhase1": "$269",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t3_50k": [
@@ -99,23 +81,12 @@
       "fundedSTPAccount": "$5,000 (10%)"
     },
     {
-      "name": "Max Lots",
-      "evaluationPhase1": "2.5",
-      "verificationPhase2": "2.5",
-      "fundedSTPAccount": "2.5"
-    },
-    {
       "name": "Challenge Leverage",
       "evaluationPhase1": "up to 1:30",
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
-      "fundedSTPAccount": "Yes"
-    },
+    
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "No",
@@ -127,12 +98,6 @@
       "evaluationPhase1": "$269",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t3_100k": [
@@ -178,12 +143,7 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
-      "fundedSTPAccount": "Yes"
-    },
+    
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -195,12 +155,6 @@
       "evaluationPhase1": "$599",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t3_150k": [
@@ -246,12 +200,7 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
-      "fundedSTPAccount": "Yes"
-    },
+    
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -263,12 +212,6 @@
       "evaluationPhase1": "$819",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t3_200k": [
@@ -314,12 +257,7 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
-      "fundedSTPAccount": "Yes"
-    },
+    
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -331,12 +269,6 @@
       "evaluationPhase1": "$1,079",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "verificationPhase2": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ]
 }

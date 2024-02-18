@@ -56,7 +56,24 @@ const FormContent = () => {
   );
 };
 
-const Addons = () => {
+const Addons = ({setPrice}:{setPrice: (price: string)=>void}) => {
+
+  const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0, price: "" }
+  const { price } = contextValue;
+
+  const [isChecked, setIsChecked] = useState(false)
+  
+  useEffect(()=> {
+    if(!isChecked) {
+      setPrice(price);
+      return
+    }
+    const oldPrice = Number(price.slice(1));
+    const twentyPercent = oldPrice * 0.20;
+    const newPrice = oldPrice + twentyPercent;
+    setPrice("$"+newPrice)
+  }, [isChecked, price, setPrice])
+
   return (
     <div>
       <h3 className="font-inter font-bold flex items-center gap-2">
@@ -68,6 +85,7 @@ const Addons = () => {
         color="blue"
         label={<p className="text-white text-sm">90/10 Profit Split (+20%)</p>}
         className="rounded-[4px] w-4 h-4 border-2 border-light-grey checked:bg-blue checked:border-transparent"
+        onChange={() => setIsChecked(isChecked=>!isChecked)}
       />
     </div>
   );
@@ -90,7 +108,7 @@ const CouponCode = () => {
   );
 };
 
-const FormFooter = () => {
+const FormFooter = ({ newPrice }: { newPrice: string }) => {
   const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0, price: "" };
   const { price } = contextValue;
   return (
@@ -98,8 +116,8 @@ const FormFooter = () => {
       <FormButton type="submit" text="Start Challenge" />
       <div>
         <h3 className="font-rubik text-2xl">
-          <span className="font-medium line-through text-[#93A1A6]">$497</span>
-          <span className="font-normal ml-2">{price}</span>
+          <span className="font-medium line-through text-[#93A1A6]">{"$" + (Number(price.slice(1))+100)}</span>
+          <span className="font-normal ml-2">{newPrice === "" ? price:newPrice}</span>
         </h3>
         <p className="font-rubik text-[#93A1A6] text-xs">For $100K Account</p>
       </div>
@@ -108,12 +126,15 @@ const FormFooter = () => {
 };
 
 const Form = () => {
+
+  const [priceAfterAddOn, setPriceAfterAddOn] = useState("");
+  
   return (
     <form className="p-6 pb-12 flex flex-col gap-5">
-      <Addons />
+      <Addons setPrice={setPriceAfterAddOn} />
       <CouponCode />
       <FormContent />
-      <FormFooter />
+      <FormFooter newPrice={priceAfterAddOn} />
     </form>
   );
 };

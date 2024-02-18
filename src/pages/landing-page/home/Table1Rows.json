@@ -6,8 +6,13 @@
       "fundedSTPAccount": "-"
     },
     {
-      "name": "Minimum Trading Day",
+      "name": "Challenge Duration",
       "evaluationPhase1": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
       "fundedSTPAccount": "-"
     },
     {
@@ -19,11 +24,6 @@
       "name": "Max Overall Drawdown",
       "evaluationPhase1": "$1,750 (7%)",
       "fundedSTPAccount": "$2,500 (10%)"
-    },
-    {
-      "name": "Max Lots",
-      "evaluationPhase1": "-",
-      "fundedSTPAccount": "-"
     },
     {
       "name": "Challenge Leverage",
@@ -44,11 +44,6 @@
       "name": "Price (Refundable Fee)",
       "evaluationPhase1": "$249",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t1_50k": [
@@ -58,9 +53,14 @@
       "fundedSTPAccount": "-"
     },
     {
-      "name": "Minimum Trading Day",
+      "name": "Challenge Duration",
       "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "5"
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "fundedSTPAccount": "-"
     },
     {
       "name": "Max Daily Drawdown",
@@ -71,11 +71,6 @@
       "name": "Max Overall Drawdown",
       "evaluationPhase1": "$3,500 (7%)",
       "fundedSTPAccount": "$5,000 (10%)"
-    },
-    {
-      "name": "Max Lots",
-      "evaluationPhase1": "-",
-      "fundedSTPAccount": "-"
     },
     {
       "name": "Challenge Leverage",
@@ -96,11 +91,6 @@
       "name": "Price (Refundable Fee)",
       "evaluationPhase1": "$349",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t1_100k": [
@@ -112,7 +102,12 @@
     {
       "name": "Challenge Duration",
       "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "5 Minimum Trading Days"
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "fundedSTPAccount": "-"
     },
     {
       "name": "Max Daily Drawdown",
@@ -123,11 +118,6 @@
       "name": "Max Overall Drawdown",
       "evaluationPhase1": "$7,000 (7%)",
       "fundedSTPAccount": "$10,000 (10%)"
-    },
-    {
-      "name": "Max Lots",
-      "evaluationPhase1": "-",
-      "fundedSTPAccount": "-"
     },
     {
       "name": "Challenge Leverage",
@@ -148,11 +138,6 @@
       "name": "Price (Refundable Fee)",
       "evaluationPhase1": "$549",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t1_150k": [
@@ -182,11 +167,6 @@
       "fundedSTPAccount": "$15,000 (10%)"
     },
     {
-      "name": "Max Lots",
-      "evaluationPhase1": "-",
-      "fundedSTPAccount": "-"
-    },
-    {
       "name": "Challenge Leverage",
       "evaluationPhase1": "up to 1:50",
       "fundedSTPAccount": "up to 1:50"
@@ -205,11 +185,6 @@
       "name": "Price (Refundable Fee)",
       "evaluationPhase1": "$749",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ],
   "t1_200k": [
@@ -239,11 +214,6 @@
       "fundedSTPAccount": "$20,000 (10%)"
     },
     {
-      "name": "Max Lots",
-      "evaluationPhase1": "-",
-      "fundedSTPAccount": "-"
-    },
-    {
       "name": "Challenge Leverage",
       "evaluationPhase1": "up to 1:50",
       "fundedSTPAccount": "up to 1:50"
@@ -262,11 +232,6 @@
       "name": "Price (Refundable Fee)",
       "evaluationPhase1": "$989",
       "fundedSTPAccount": "Refund"
-    },
-    {
-      "name": "Add-ons available",
-      "evaluationPhase1": "90/10 Split, Higher Leverage, News Holding",
-      "fundedSTPAccount": "90/10 Split, Higher Leverage, News Holding"
     }
   ]
 }

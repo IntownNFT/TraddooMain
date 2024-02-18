@@ -102,14 +102,23 @@ const Challenge = () => {
     }
   }, [activeSize, activeType]);
 
-  useEffect(() => {
-    let row = 0;
-    if (activeType === 0) {
-      if (activeSize <= 2) row = 8;
-      else row = 9;
-    } else row = 9;
+  const getPriceByName = (tableRows: RowDataItem[], itemName: string): string | null => {
+    const item = tableRows.find(row => row.name === itemName);
+  
+    if (item) {
+      const price = item.evaluationPhase1 || item.verificationPhase2 || item.fundedSTPAccount;
+  
+      return price;
+    }
+  
+    return null; // Price not found
+  };
 
-    setPrice(tableRows[row]?.evaluationPhase1);
+  useEffect(() => {
+    const price = getPriceByName(tableRows,  'Price (Refundable Fee)');
+    if(price)
+      setPrice(price)
+    
   }, [activeSize, activeType, tableRows]);
 
   return (
