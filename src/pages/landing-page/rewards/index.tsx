@@ -48,7 +48,6 @@ const Rewards = () => {
       <SectionHeader
         title="Reward Program"
         subtitle="Welcome to Traddoo's new reward program. Earn tickets by completing actions. Every ticket = 1 entry to our weekly Raffle."
-        titleStyles="mt-24"
         subtitleStyles="font-poppins font-medium !text-[#717171] mt-3"
       />
       <Grid />

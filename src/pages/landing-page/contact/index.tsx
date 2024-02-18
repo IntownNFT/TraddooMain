@@ -114,7 +114,6 @@ const ContactUs = () => {
       <SectionHeader
         title="Contact Us"
         subtitle="Any question or remarks? Just write us a message!"
-        titleStyles="mt-24"
         subtitleStyles="font-poppins font-medium !text-[#717171] mt-3"
       />
       <ContactForm />

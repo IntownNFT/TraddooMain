@@ -25,7 +25,6 @@ const TermsAndConditions = () => {
       <SectionHeader
         title="Terms and Conditions"
         subtitle="Any question or remarks? Just write us a message!"
-        titleStyles="mt-24"
         subtitleStyles="font-poppins font-medium !text-[#717171] mt-3"
       />
       <article className="mt-20 font-poppins bg-dark-grey border border-light-grey rounded-lg py-12 px-5 md:px-16" id="markdown">

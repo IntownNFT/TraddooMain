@@ -20,7 +20,7 @@ const Squeezebox = ({ title, description }: SqueezeboxData) => {
       <Accordion
         placeholder={""}
         open={open === 1}
-        className="p-6 bg-dark-grey border border-light-grey rounded-lg"
+        className="p-6 max-w-3xl mx-auto bg-dark-grey border border-light-grey rounded-lg"
       >
         <AccordionHeader
           placeholder={""}
