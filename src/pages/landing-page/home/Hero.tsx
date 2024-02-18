@@ -1,5 +1,5 @@
 import Button from "../../../components/Button";
-import HeroImg from "../../../assets/landing-page/home/dashboard.png"
+import HeroImg from "../../../assets/landing-page/home/dashboard.webp"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -94,13 +94,12 @@ const Hero = () => {
 
     useGSAP(()=> {
         gsap.fromTo("#animate", {
-            y: 50,
+            y: 15,
             opacity: 0,
         }, {
             y: 0,
             opacity: 1,
             stagger: 0.2,
-            duration: 0.5,
         })
     }, [])
 
@@ -108,7 +107,7 @@ const Hero = () => {
     <div className="flex flex-col justify-center items-center gap-5 mt-12 md:mt-[7svh]">
       <Content id="animate" />
       <CTAButtons id="animate" />
-      <img src={HeroImg} title="Toddoo Dashboard" alt="Toddoo Dashboard" className="mt-12 md:mt-20" id="animate" />
+      <img src={HeroImg} title="Toddoo Dashboard" width={1300} height={1300} alt="Toddoo Dashboard" className="mt-12 md:mt-20" loading="lazy" />
       <Stats />
     </div>
   );

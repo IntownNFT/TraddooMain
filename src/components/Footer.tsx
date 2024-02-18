@@ -70,6 +70,9 @@ const Footer = () => {
             <img
               src={social.icon}
               title={social.link}
+              width={20}
+              height={20}
+              alt={`Traddoo Social Media ${social.link}`}
               className="w-5 h-5 opacity-50 hover:opacity-100"
             />
           </a>

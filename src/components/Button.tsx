@@ -14,9 +14,6 @@ const Button = ({
   id,
   children,
 }: button) => {
-  // useGSAP(() => {
-  //   if (!animate) return;
-  // }, []);
   return (
     <Link
       to={path}

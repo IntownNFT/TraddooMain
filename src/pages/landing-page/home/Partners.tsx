@@ -1,5 +1,5 @@
 import Logo1 from "../../../assets/landing-page/partners/tradelocker.jpg";
-import Logo2 from "../../../assets/landing-page/partners/thinkmasters.png";
+import Logo2 from "../../../assets/landing-page/partners/thinkmasters.webp";
 import Logo3 from "../../../assets/landing-page/partners/funderpro.png";
 import Logo4 from "../../../assets/landing-page/partners/redacre.png";
 import Logo5 from "../../../assets/landing-page/partners/propfirm.png";
@@ -45,7 +45,7 @@ const Partners = () => {
                 alt="partner"
                 width={143}
                 height={114}
-                className="rounded-[20px] saturate-0 contrast-75 opacity-75 hover:scale-105 hover:opacity-100 hover:saturate-100 hover:contrast-100 hover:shadow-[0px_0px_20px_0px_rgba(255,255,255,0.1)] transition-all"
+                className="rounded-[20px] saturate-0 contrast-75 opacity-75"
               />
             </li>
           ))}
