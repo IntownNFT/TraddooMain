@@ -50,6 +50,7 @@ const LogoLink = () => {
         width={26}
         height={26}
         className="bg-light-grey rounded-lg"
+        loading="lazy"
       />
       <span className="text-xl">Traddoo</span>
     </a>
