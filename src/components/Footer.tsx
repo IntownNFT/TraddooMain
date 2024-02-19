@@ -4,14 +4,14 @@ import TelegramIcon from "../assets/telegram.svg";
 import DocsIcon from "../assets/docs.svg";
 
 const footerLinks = [
-  {
-    text: "Documentation",
-    link: "/documentation",
-  },
-  {
-    text: "Governance",
-    link: "/governance",
-  },
+  // {
+  //   text: "Documentation",
+  //   link: "/documentation",
+  // },
+  // {
+  //   text: "Governance",
+  //   link: "/governance",
+  // },
   {
     text: "Privacy Policy",
     link: "/privacy-policy",
