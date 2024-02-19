@@ -77,7 +77,7 @@ const stats = [
     stat: "33",
   },
   {
-    title: "Total Funded",
+    title: "Total Payouts",
     stat: "$173,668",
   },
 ];

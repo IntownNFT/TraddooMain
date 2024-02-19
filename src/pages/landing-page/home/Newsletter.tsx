@@ -5,7 +5,7 @@ const Newsletter = () => {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="py-24 px-5 bg-dark-grey border border-light-grey rounded-lg space-y-4">
+    <div className="py-24 px-6 bg-dark-grey border border-light-grey rounded-lg space-y-4 w-full max-w-[1120px] mx-auto">
       <h3 className="font-raleway font-bold text-center text-3xl md:text-5xl">
         Join Our Newsletter
       </h3>
