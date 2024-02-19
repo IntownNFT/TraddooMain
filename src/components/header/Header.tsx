@@ -9,10 +9,10 @@ const links = [
     page: "Competition",
     path: "/competition",
   },
-  {
-    page: "Rewards",
-    path: "/rewards",
-  },
+  // {
+  //   page: "Rewards",
+  //   path: "/rewards",
+  // },
   {
     page: "Rules",
     path: "/rules",
