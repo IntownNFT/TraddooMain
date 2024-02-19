@@ -4,9 +4,11 @@ import Logo3 from "../../../assets/landing-page/partners/funderpro.webp";
 import Logo4 from "../../../assets/landing-page/partners/redacre.webp";
 import Logo5 from "../../../assets/landing-page/partners/propfirm.webp";
 import Logo6 from "../../../assets/landing-page/partners/cryptochill.webp";
+import Logo7 from "../../../assets/landing-page/partners/fundedraffle.webp"
+
 import { useEffect, useRef } from "react";
 
-const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7];
 
 const Partners = () => {
   const logosRef = useRef<HTMLUListElement>(null);
