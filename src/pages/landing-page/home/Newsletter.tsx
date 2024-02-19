@@ -7,10 +7,7 @@ const Newsletter = () => {
   return (
     <div className="py-24 px-5 bg-dark-grey border border-light-grey rounded-lg space-y-4">
       <h3 className="font-raleway font-bold text-center text-3xl md:text-5xl">
-        Join Our Newsletter{" "}
-        <span className="text-blue text-3xl md:text-5xl translate-y-2 material-symbols-rounded">
-          mark_email_unread
-        </span>
+        Join Our Newsletter
       </h3>
       <div className="relative flex w-full max-w-lg mx-auto">
         <Input
@@ -19,7 +16,7 @@ const Newsletter = () => {
           value={email}
           placeholder="John@email.com"
           onChange={(e) => setEmail(e.target.value)}
-          className="pr-20 bg-transparent px-3 py-2 text-lg text-white rounded-md border-2 !border-light-grey focus:!border-blue placeholder:!opacity-100 placeholder:!text-light-grey"
+          className="pr-20 bg-transparent px-3 !h-11 !text-lg font-raleway font-semibold text-white rounded-md border-2 !border-light-grey focus:!border-blue placeholder:!opacity-100 placeholder:!text-light-grey !transition-none"
           containerProps={{
             className: "min-w-0",
           }}
@@ -31,9 +28,9 @@ const Newsletter = () => {
           placeholder={""}
           size="sm"
           disabled={!email}
-          className="!absolute right-1 top-1 bg-blue disabled:!opacity-100"
+          className="!absolute right-1 top-1 bg-blue disabled:!opacity-100 font-rubik font-semibold normal-case !text-sm"
         >
-          Invite
+          Join
         </Button>
       </div>
     </div>
