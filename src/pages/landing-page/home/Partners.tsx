@@ -48,7 +48,6 @@ const Partners = () => {
                 width={143}
                 height={114}
                 className="rounded-[20px]"
-                loading="lazy"
               />
             </li>
           ))}
