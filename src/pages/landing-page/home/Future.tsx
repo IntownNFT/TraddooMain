@@ -1,38 +1,40 @@
-import FireIcon from "../../../assets/landing-page/fire.svg";
-import NotimeIcon from "../../../assets/landing-page/home/paperplane.svg";
-import FundedIcon from "../../../assets/landing-page/home/heirarchy.svg";
-import PayoutIcon from "../../../assets/landing-page/home/exit.svg";
 import Grid from "./Grid";
 import SectionHeader from "../../../components/SectionHeader";
+import CheckIcon from "../../../assets/landing-page/home/check.svg"
+import TimeIcon from "../../../assets/landing-page/home/watchtimer.svg"
+import PieIcon from "../../../assets/landing-page/home/Analytics Pie.svg"
+import PowerIcon from "../../../assets/landing-page/home/power.svg"
+import CodeIcon from "../../../assets/landing-page/home/Code.svg"
+import GraphIcon from "../../../assets/landing-page/home/graph_up.svg"
 
 const cards = [
   {
-    icon: FundedIcon,
+    icon: CheckIcon,
     title: "Funded with Real Capital",
     description: "All allocations are live capital, withdraw anytime.",
   },
   {
-    icon: NotimeIcon,
+    icon: TimeIcon,
     title: "No Time Limits",
     description: "Trade with MT5 powered by think markets.",
   },
   {
-    icon: FireIcon,
+    icon: PieIcon,
     title: "80/20 Profit Split",
     description: "10% profit target, 50% balance increase, every 3 months",
   },
   {
-    icon: PayoutIcon,
+    icon: PowerIcon,
     title: "Daily Payouts",
     description: "Withdraw profits daily with 8 hours average payout time.",
   },
   {
-    icon: FireIcon,
+    icon: CodeIcon,
     title: "EA's Allowed",
     description: "Use custom built EA's to Trade and manage risk.",
   },
   {
-    icon: PayoutIcon,
+    icon: GraphIcon,
     title: "5 Million Scale-up Plan",
     description:
       "Consistently achieve a 10% profit target to be eligible for a 50% balance increase every 3 months.",
