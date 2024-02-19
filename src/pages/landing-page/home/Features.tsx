@@ -1,29 +1,30 @@
-import FireIcon from "../../../assets/landing-page/fire.svg";
-import NotimeIcon from "../../../assets/landing-page/home/paperplane.svg";
-import FundedIcon from "../../../assets/landing-page/home/heirarchy.svg";
-import PayoutIcon from "../../../assets/landing-page/home/exit.svg";
 import Grid from "./Grid";
 import SectionHeader from "../../../components/SectionHeader";
+import HeadphonesIcon from "../../../assets/landing-page/home/headphones.svg"
+import RefundIcon from "../../../assets/landing-page/home/recycle.svg"
+import ConfigIcon from "../../../assets/landing-page/home/configure.svg"
+import LaptopIcon from "../../../assets/landing-page/home/laptop.svg"
+
 
 const cards = [
   {
-    icon: FundedIcon,
+    icon: HeadphonesIcon,
     title: "ECN/STP Execution",
     description: "Direct market execution when trading live environment",
   },
   {
-    icon: NotimeIcon,
+    icon: RefundIcon,
     title: "Refundable Fee",
     description: "100% refundable fee when passing stage 2 of the challenge",
   },
   {
-    icon: FireIcon,
+    icon: ConfigIcon,
     title: "Tight Spreads",
     description:
       "Industry leading spreads provided by industry leading providers",
   },
   {
-    icon: PayoutIcon,
+    icon: LaptopIcon,
     title: "Multi Trading Platform",
     description: "Choose between Think markets or Tradelocker",
   },
