@@ -2,7 +2,7 @@
 
 Data Protection & Cookies
 
-We utilize cookies to allow you to remember your choices and give you a better-tailored experience. While presenting content, advertisements, and other functionalities on the https://funderpro.com/ website (the "Website") various technologies are used to collect and process personal data, including cookies.
+We utilize cookies to allow you to remember your choices and give you a better-tailored experience. While presenting content, advertisements, and other functionalities on the [https://traddoo.com](https://traddoo.com/) website (the "Website") various technologies are used to collect and process personal data, including cookies.
 
 1. Cookies Explained
 
@@ -34,7 +34,7 @@ We utilize cookies to allow you to remember your choices and give you a better-t
 
 TitleType of CookieExpiryPurpose\_gaAnalytical / Performance3 yearsThis cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.
 
-For the period specified in the consent. \_gidAnalytical / Performance24 hoursThis cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.1P\_JARThird-Party1 monthThese cookies are set via embedded YouTube-videos. They register anonymous statistical data on for example how many times the video is displayed and what settings are used for playback. No sensitive data is collected unless you log in to your google account, in that case your choices are linked with your account, for example if you click "like" on a video. For more information, read the general Google Privacy policy.ConsentThird-Party20 years and 1 monthThese cookies are set via embedded YouTube-videos. They register anonymous statistical data on for example how many times the video is displayed and what settings are used for playback.
+For the period specified in the consent.\_gidAnalytical / Performance24 hoursThis cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. It is included in each page request in a site and used to calculate visitor, session and campaign data for the sites analytics reports.1P\_JARThird-Party1 monthThese cookies are set via embedded YouTube-videos. They register anonymous statistical data on for example how many times the video is displayed and what settings are used for playback.No sensitive data is collected unless you log in to your google account, in that case your choices are linked with your account, for example if you click "like" on a video. For more information, read the general Google Privacy policy.ConsentThird-Party20 years and 1 monthThese cookies are set via embedded YouTube-videos. They register anonymous statistical data on for example how many times the video is displayed and what settings are used for playback.
 
 No sensitive data is collected unless you log in to your google account, in that case, your choices are linked with your account, for example, if you click "like" on a video.
 
