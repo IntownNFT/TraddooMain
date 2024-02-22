@@ -9,6 +9,14 @@ const Newsletter = () => {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
+    if(email==="") {
+      setErr("Please fill in the email field.")
+      return;
+    }
+    if(!email.includes("@")) {
+      setErr("Please enter a valid email address.")
+      return;
+    }
     try {
       await axios.post("http://localhost:3000/subscribe", {email:email})
       setSuccess("Email successfully registered!")

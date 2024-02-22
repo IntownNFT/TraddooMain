@@ -1,14 +1,15 @@
-import { useRef, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import SectionHeader from "../../../components/SectionHeader";
-import { Radio } from "@material-tailwind/react";
+import { Alert, Radio } from "@material-tailwind/react";
 import FormButton from "../../../components/FormButton";
+import axios from "axios";
 
 interface Input {
   type: string;
   label: string;
-  ref: React.RefObject<HTMLInputElement>;
+  setValue: (val: string) => void
 }
-const ContactInput = ({ type, label, ref }: Input) => {
+const ContactInput = ({ type, label, setValue }: Input) => {
   return (
     <div className="flex flex-col gap-2 w-full lg:max-w-[363px]">
       <label htmlFor={label} className="font-medium text-lg sm:text-xl">
@@ -18,9 +19,9 @@ const ContactInput = ({ type, label, ref }: Input) => {
         title={label}
         type={type}
         placeholder={label}
-        ref={ref}
         className="bg-black rounded-sm text-sm sm:text-base text-white placeholder:text-white py-3.5 px-4 focus:outline-0 border border-transparent focus:border-blue"
         required
+        onChange={(e) => setValue(e.target.value)}
       />
     </div>
   );
@@ -53,58 +54,101 @@ const radio_choices = [
 ];
 
 const ContactForm = () => {
-  const firstnameRef = useRef<HTMLInputElement>(null);
-  const lastnameRef = useRef<HTMLInputElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const phoneRef = useRef<HTMLInputElement>(null);
-  const msgRef = useRef<HTMLTextAreaElement>(null);
-  const [subject, setSubject] = useState("")
-  console.log(subject)
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [subject, setSubject] = useState("Demo/Live Account")
+  const [message, setMessage] = useState("")
+
+  const [err, setErr] = useState("")
+  const [success, setSuccess] = useState("")
+  const [open, setOpen] = useState(false)
+
+  const handleSubmit = async (e: FormEvent) => {
+
+    e.preventDefault()
+
+    if (firstName === "" || lastName === "" || email === "" || phone === "") {
+      setErr("Please fill in all the details.")
+      setOpen(true)
+      return
+    };
+
+    try {
+      const sender = {
+        email,
+        name: firstName + lastName,
+        subject,
+        phone,
+        message
+      }
+      await axios.post("http://localhost:3000/message", sender)
+      setSuccess("Message sent successfully!")
+      setOpen(true)
+    } catch (err: any) {
+      setErr("Some error occured. Try again!")
+      setOpen(true)
+    }
+  }
+
+  const closeAlert = () => {
+    setErr("")
+    setSuccess("")
+    setOpen(false)
+  }
+
   return (
-    <form className="w-full max-w-[806px] mx-auto bg-dark-grey border border-light-grey rounded-lg font-poppins flex flex-col justify-center items-stretch gap-6 py-6 px-3 sm:p-6">
-      <div className="flex gap-6 flex-wrap ">
-        <ContactInput type="text" label="First Name" ref={firstnameRef} />
-        <ContactInput type="text" label="Last Name" ref={lastnameRef} />
-      </div>
-      <div className="flex gap-6 flex-wrap">
-        <ContactInput type="email" label="Email" ref={emailRef} />
-        <ContactInput type="number" label="Phone Number" ref={phoneRef} />
-      </div>
-      <div>
-        <label className="font-medium text-xl">Select Subject?</label>
-        <div className="flex gap-3 flex-wrap mt-4 sm:mt-2 -ml-2">
-          {radio_choices.map((radio, index) => (
-            <Radio
-              crossOrigin={""}
-              className="w-3 h-3 font-normal text-base"
-              color="blue"
-              name="type"
-              label={radio}
-              labelProps={{
-                className: "text-white -ml-1"
-              }}
-              defaultChecked={index === 0}
-              key={index}
-              onClick={()=>setSubject(radio)}
-              icon=<RadioIcon />
-            />
-          ))}
+    <>
+      <Alert open={open} onClose={closeAlert} className="w-full max-w-[806px] mx-auto my-3" color={success==="" ? "gray":"green"}>
+        {err==="" || <span>{err}</span>}
+        {success==="" || <span>{success}</span>}
+      </Alert>
+      <form className="w-full max-w-[806px] mx-auto bg-dark-grey border border-light-grey rounded-lg font-poppins flex flex-col justify-center items-stretch gap-6 py-6 px-3 sm:p-6" onSubmit={handleSubmit}>
+        <div className="flex gap-6 flex-wrap ">
+          <ContactInput type="text" label="First Name" setValue={setFirstName} />
+          <ContactInput type="text" label="Last Name" setValue={setLastName} />
         </div>
-      </div>
-      <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="font-medium text-xl">
-          Message
-        </label>
-        <textarea
-          title="message"
-          placeholder="Message"
-          className="bg-black rounded-sm text-base text-white placeholder:text-white py-3.5 px-4 focus:outline-0 border border-transparent focus:border-blue resize-none"
-          rows={5}
-          ref={msgRef}
-        ></textarea>
-      </div>
-      <FormButton type="submit" text="Send Message" classes="font-poppins !font-medium" />
-    </form>
+        <div className="flex gap-6 flex-wrap">
+          <ContactInput type="email" label="Email" setValue={setEmail} />
+          <ContactInput type="number" label="Phone Number" setValue={setPhone} />
+        </div>
+        <div>
+          <label className="font-medium text-xl">Select Subject?</label>
+          <div className="flex gap-3 flex-wrap mt-4 sm:mt-2 -ml-2">
+            {radio_choices.map((radio, index) => (
+              <Radio
+                crossOrigin={""}
+                className="w-3 h-3 font-normal text-base"
+                color="blue"
+                name="type"
+                label={radio}
+                labelProps={{
+                  className: "text-white -ml-1"
+                }}
+                defaultChecked={index === 0}
+                key={index}
+                onClick={() => setSubject(radio)}
+                icon=<RadioIcon />
+              />
+            ))}
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="message" className="font-medium text-xl">
+            Message
+          </label>
+          <textarea
+            title="message"
+            placeholder="Message"
+            className="bg-black rounded-sm text-base text-white placeholder:text-white py-3.5 px-4 focus:outline-0 border border-transparent focus:border-blue resize-none"
+            rows={5}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
+        </div>
+        <FormButton type="submit" text="Send Message" classes="font-poppins !font-medium" />
+      </form>
+    </>
   );
 };
 
