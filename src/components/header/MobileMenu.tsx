@@ -67,7 +67,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
           ref={menuRef}
         >
           {links.map((link, index) => (
-            <MenuLink key={index} link={link} />
+            <MenuLink key={index} link={link} setOpen={setOpen} />
           ))}
           <Button path="/" variant="primary" id="get-started" classes="font-inter text-xl mt-5">
             Start Trading
