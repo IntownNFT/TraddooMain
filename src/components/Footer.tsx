@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import TwitterIcon from "../assets/twitter.svg";
-import TelegramIcon from "../assets/telegram.svg";
-import DocsIcon from "../assets/docs.svg";
+import InstaIcon from "../assets/instagram.svg";
+import DiscordIcon from "../assets/discord.svg";
 
 const footerLinks = [
   // {
@@ -33,15 +33,15 @@ const footerLinks = [
 const socialLinks = [
   {
     icon: TwitterIcon,
-    link: "/",
+    link: "https://twitter.com/Traddoo",
   },
   {
-    icon: TelegramIcon,
-    link: "/",
+    icon: InstaIcon,
+    link: "https://www.instagram.com/traddoo/",
   },
   {
-    icon: DocsIcon,
-    link: "/",
+    icon: DiscordIcon,
+    link: "https://discord.gg/tZRhvbVNN6",
   },
 ];
 

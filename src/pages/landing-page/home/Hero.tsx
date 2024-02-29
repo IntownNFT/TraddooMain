@@ -31,7 +31,7 @@ const CTAButtons = ({ id }: { id?: string }) => {
   return (
     <div className="flex justify-center items-center gap-2 sm:gap-12 mt-2 flex-wrap">
       <Button
-        path="/"
+        path="https://prop.traddoo.com/login"
         variant="primary"
         classes="font-inter font-medium px-8 py-3 w-full sm:w-auto"
         id={id}
@@ -39,7 +39,7 @@ const CTAButtons = ({ id }: { id?: string }) => {
         Start Trading
       </Button>
       <Button
-        path="/"
+        path="https://prop.traddoo.com/buy-challenge/"
         variant="secondary"
         classes="text-black font-inter font-medium px-8 py-3 w-full sm:w-auto"
         id={id}
