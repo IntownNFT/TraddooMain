@@ -28,7 +28,7 @@ const LinkWrapper = () => {
       {links.map((link, index) => (
         <MenuLink key={index} link={link} />
       ))}
-      <Button path="/" variant="primary" classes="font-inter text-sm">
+      <Button path="https://prop.traddoo.com/login" variant="primary" classes="font-inter text-sm">
         Start Trading
       </Button>
     </div>
