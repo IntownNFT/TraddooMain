@@ -1,4 +1,4 @@
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useState } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import { Alert, Radio } from "@material-tailwind/react";
 import FormButton from "../../../components/FormButton";
@@ -73,7 +73,7 @@ const ContactForm = () => {
       setErr("Please fill in all the details.")
       setOpen(true)
       return
-    };
+    }
 
     try {
       const sender = {
@@ -86,7 +86,7 @@ const ContactForm = () => {
       await axios.post("http://localhost:3000/message", sender)
       setSuccess("Message sent successfully!")
       setOpen(true)
-    } catch (err: any) {
+    } catch (err: unknown) {
       setErr("Some error occured. Try again!")
       setOpen(true)
     }
