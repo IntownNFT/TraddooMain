@@ -5,6 +5,9 @@ export default withMT({
     "./index.html",
     "./src/**/*.{ts,tsx}",
   ],
+  purge: {
+    content: ['./src/**/*.tsx'],
+  },
   theme: {
     extend: {
       colors: {
