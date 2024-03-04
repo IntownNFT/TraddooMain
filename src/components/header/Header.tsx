@@ -60,7 +60,7 @@ const LogoLink = () => {
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-dark-grey border-b-[1px] border-b-light-grey py-4 font-raleway font-bold px-5 2xl:px-0 md:sticky relative z-50 top-0">
+    <nav className="bg-dark-grey border-b-[1px] border-b-light-grey py-4 font-raleway font-bold px-5 2xl:px-0 sticky z-50 top-0">
       <div className="max-w-[1300px] w-full flex justify-between items-center mx-auto">
         <LogoLink />
         <LinkWrapper />

@@ -50,7 +50,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
   };
 
   return (
-    <div className="block md:hidden">
+    <div className="block md:hidden" id="mob_menu">
       <button
         type="button"
         title="menu"
@@ -65,6 +65,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
         <div
           className={`fixed px-5 pt-20 inset-0 bg-black flex flex-col justify-start items-start gap-4 text-3xl`}
           ref={menuRef}
+          id="mob_menu_open"
         >
           {links.map((link, index) => (
             <MenuLink key={index} link={link} setOpen={setOpen} />
