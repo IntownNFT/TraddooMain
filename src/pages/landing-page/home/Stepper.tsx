@@ -26,8 +26,8 @@ const Steps = ({ activeStep, setActiveStep, steps }: StepProps) => {
           onClick={() => setActiveStep(index)}
           key={index}
         >
-          <div className=" absolute w-max -bottom-2 translate-y-full flex flex-col font-rubik font-medium">
-            <h4 className="text-base sm:text-xl text-center text-white">{step.title}</h4>
+          <div className="absolute w-max -bottom-2 -left-5 translate-y-full flex flex-col font-rubik font-medium">
+            <h4 className="text-base sm:text-xl text-white !break-all max-w-[60px] sm:max-w-max">{step.title}</h4>
             {step.isPopular && (
               <span className="text-xs text-blue text-center">
                 Most Popular
