@@ -1537,8 +1537,6 @@ cryptocurrency.*
 > Discover the perfect match among our diverse Funded Account Challenges
 > and chart your course toward financial success and trading excellence.
 
-{thisisquestion}**TYPES OF FUNDED ACCOUNT CHALLENGE**
-
 > {thisisquestion}**Traddoo Funded Challenge Types Overview**
 >
 > Traddoo offers three Challenge types, specifically designed to suit
