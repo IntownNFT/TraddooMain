@@ -3,12 +3,16 @@ import { Checkbox } from "@material-tailwind/react";
 import FormButton from "../../../components/FormButton";
 import { createContext, useContext, useEffect, useState } from "react";
 
-const ChallengeContext = createContext<{ activeType: number; activeSize: number; price: string } | undefined>(undefined);
-
+const ChallengeContext = createContext<
+  { activeType: number; activeSize: number; price: string } | undefined
+>(undefined);
 
 const FormContent = () => {
-  const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0 };
-  const { activeType, activeSize } = contextValue;  
+  const contextValue = useContext(ChallengeContext) || {
+    activeType: 0,
+    activeSize: 0,
+  };
+  const { activeType, activeSize } = contextValue;
 
   const [plan, setPlan] = useState("");
   const [size, setSize] = useState("");
@@ -46,47 +50,14 @@ const FormContent = () => {
 
   return (
     <div className="mt-4 font-rubik font-semibold">
-      <h2 className="mb-4 text-2xl">{plan} {size}</h2>
+      <h2 className="mb-4 text-2xl">
+        {plan} {size}
+      </h2>
       <p className="font-normal text-[#93A1A6]">
         The Challenge is your initial dive into the becoming an Traddoo Trader.
         Prove your trading skills, hit the profit target, maintain discipline,
         and showcase responsible risk management.
       </p>
-    </div>
-  );
-};
-
-const Addons = ({setPrice}:{setPrice: (price: string)=>void}) => {
-
-  const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0, price: "" }
-  const { price } = contextValue;
-
-  const [isChecked, setIsChecked] = useState(false)
-  
-  useEffect(()=> {
-    if(!isChecked) {
-      setPrice(price);
-      return
-    }
-    const oldPrice = Number(price.slice(1));
-    const twentyPercent = oldPrice * 0.20;
-    const newPrice = oldPrice + twentyPercent;
-    setPrice("$"+newPrice)
-  }, [isChecked, price, setPrice])
-
-  return (
-    <div>
-      <h3 className="font-inter font-bold flex items-center gap-2">
-        Select Add-ons{" "}
-        <span className="material-symbols-rounded text-blue">info</span>
-      </h3>
-      <Checkbox
-        crossOrigin={""}
-        color="blue"
-        label={<p className="text-white text-sm">90/10 Profit Split (+20%)</p>}
-        className="rounded-[4px] w-4 h-4 border-2 border-light-grey checked:bg-blue checked:border-transparent"
-        onChange={() => setIsChecked(isChecked=>!isChecked)}
-      />
     </div>
   );
 };
@@ -108,16 +79,29 @@ const CouponCode = () => {
   );
 };
 
-const FormFooter = ({ newPrice }: { newPrice: string }) => {
-  const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0, price: "" };
+const FormFooter = ({ newPrice }: { newPrice?: string }) => {
+  const contextValue = useContext(ChallengeContext) || {
+    activeType: 0,
+    activeSize: 0,
+    price: "",
+  };
   const { price } = contextValue;
   return (
     <div className="flex items-center gap-5 flex-wrap-reverse">
-      <FormButton type="submit" text="Start Challenge" />
+      <FormButton
+        type="submit"
+        text="Start Challenge"
+        link="https://prop.traddoo.com/buy-challenge/"
+        target="_blank"
+      />
       <div>
         <h3 className="font-rubik text-2xl">
-          <span className="font-medium line-through text-[#93A1A6]">{"$" + (Number(price.slice(1))+100)}</span>
-          <span className="font-normal ml-2">{newPrice === "" ? price:newPrice}</span>
+          <span className="font-medium line-through text-[#93A1A6]">
+            {"$" + (Number(price.slice(1)) + 100)}
+          </span>
+          <span className="font-normal ml-2">
+            {newPrice === "" ? price : newPrice}
+          </span>
         </h3>
         <p className="font-rubik text-[#93A1A6] text-xs">For $100K Account</p>
       </div>
@@ -126,15 +110,14 @@ const FormFooter = ({ newPrice }: { newPrice: string }) => {
 };
 
 const Form = () => {
+  // const [priceAfterAddOn, setPriceAfterAddOn] = useState("");
 
-  const [priceAfterAddOn, setPriceAfterAddOn] = useState("");
-  
   return (
     <form className="p-6 pb-12 flex flex-col gap-5">
-      <Addons setPrice={setPriceAfterAddOn} />
+      {/* <Addons setPrice={setPriceAfterAddOn} /> */}
       <CouponCode />
       <FormContent />
-      <FormFooter newPrice={priceAfterAddOn} />
+      <FormFooter />
     </form>
   );
 };
@@ -144,13 +127,22 @@ interface ChallengeProps {
   activeSize: number;
   price: string;
 }
-const StartChallengeForm = ({ activeType, activeSize, price }: ChallengeProps) => {
-
+const StartChallengeForm = ({
+  activeType,
+  activeSize,
+  price,
+}: ChallengeProps) => {
   return (
-    <ChallengeContext.Provider value={{activeType, activeSize, price}}>
+    <ChallengeContext.Provider value={{ activeType, activeSize, price }}>
       <div className="bg-dark-grey border border-light-grey rounded-[14px] w-full lg:max-w-[410px]">
         <div className="border-b border-light-grey flex justify-center">
-          <img src={Logo} title="Traddoo Logo" alt="Traddoo logo" width={200} height={200} />
+          <img
+            src={Logo}
+            title="Traddoo Logo"
+            alt="Traddoo logo"
+            width={200}
+            height={200}
+          />
         </div>
         <Form />
       </div>
@@ -159,3 +151,38 @@ const StartChallengeForm = ({ activeType, activeSize, price }: ChallengeProps) =
 };
 
 export default StartChallengeForm;
+
+// const Addons = ({setPrice}:{setPrice: (price: string)=>void}) => {
+
+//   const contextValue = useContext(ChallengeContext) || { activeType: 0, activeSize: 0, price: "" }
+//   const { price } = contextValue;
+
+//   const [isChecked, setIsChecked] = useState(false)
+
+//   useEffect(()=> {
+//     if(!isChecked) {
+//       setPrice(price);
+//       return
+//     }
+//     const oldPrice = Number(price.slice(1));
+//     const twentyPercent = oldPrice * 0.20;
+//     const newPrice = oldPrice + twentyPercent;
+//     setPrice("$"+newPrice)
+//   }, [isChecked, price, setPrice])
+
+//   return (
+//     <div>
+//       <h3 className="font-inter font-bold flex items-center gap-2">
+//         Select Add-ons{" "}
+//         <span className="material-symbols-rounded text-blue">info</span>
+//       </h3>
+//       <Checkbox
+//         crossOrigin={""}
+//         color="blue"
+//         label={<p className="text-white text-sm">90/10 Profit Split (+20%)</p>}
+//         className="rounded-[4px] w-4 h-4 border-2 border-light-grey checked:bg-blue checked:border-transparent"
+//         onChange={() => setIsChecked(isChecked=>!isChecked)}
+//       />
+//     </div>
+//   );
+// }
