@@ -100,7 +100,7 @@ const FormFooter = ({ newPrice }: { newPrice?: string }) => {
             {"$" + (Number(price.slice(1)) + 100)}
           </span>
           <span className="font-normal ml-2">
-            {newPrice === "" ? price : newPrice}
+            {newPrice ? newPrice : price}
           </span>
         </h3>
         <p className="font-rubik text-[#93A1A6] text-xs">For $100K Account</p>
