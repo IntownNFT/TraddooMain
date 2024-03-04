@@ -4,14 +4,6 @@ import InstaIcon from "../assets/instagram.svg";
 import DiscordIcon from "../assets/discord.svg";
 
 const footerLinks = [
-  // {
-  //   text: "Documentation",
-  //   link: "/documentation",
-  // },
-  // {
-  //   text: "Governance",
-  //   link: "/governance",
-  // },
   {
     text: "Privacy Policy",
     link: "/privacy-policy",
@@ -24,10 +16,18 @@ const footerLinks = [
     text: "Terms of Use",
     link: "/terms-of-use",
   },
-  {
-    text: "Disclaimer",
-    link: "/disclaimer",
-  },
+  // {
+  //   text: "Documentation",
+  //   link: "/documentation",
+  // },
+  // {
+  //   text: "Governance",
+  //   link: "/governance",
+  // },
+  // {
+  //   text: "Disclaimer",
+  //   link: "/disclaimer",
+  // },
 ];
 
 const socialLinks = [
