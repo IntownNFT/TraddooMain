@@ -5,7 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
-    <link rel="preload" href="./src/assets/landing-page/home/dashboard.webp" as="image" />
+    <link
+      rel="preload"
+      href="./src/assets/landing-page/home/dashboard.webp"
+      as="image"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,6 +53,14 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script src="https://chat.imred.ai/public/imred-dixa.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        window.loadIMRedWidget({
+          orgId: "org_20291d9f-2ad8-4c4c-8235-817e489487db",
+        });
+      });
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
