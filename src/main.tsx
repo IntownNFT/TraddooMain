@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import { createMemoryRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/landing-page/home/index.tsx";
 import Competitions from "./pages/landing-page/competitions/index.tsx";
 import Rules from "./pages/landing-page/rules/index.tsx";
@@ -13,7 +13,7 @@ import TermsAndConditions from "./pages/landing-page/terms-and-conditions/index.
 import ReturnPolicy from "./pages/landing-page/return-policy/index.tsx";
 // import Rewards from "./pages/landing-page/rewards/index.tsx";
 
-const router = createMemoryRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
