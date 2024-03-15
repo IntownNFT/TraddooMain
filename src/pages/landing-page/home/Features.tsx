@@ -26,7 +26,7 @@ const cards = [
   {
     icon: LaptopIcon,
     title: "Multi Trading Platform",
-    description: "Choose between Think markets or Tradelocker",
+    description: "Choose between Tradelocker and other platforms soon.",
   },
 ];
 

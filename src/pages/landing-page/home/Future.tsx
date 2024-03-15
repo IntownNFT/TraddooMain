@@ -16,7 +16,7 @@ const cards = [
   {
     icon: TimeIcon,
     title: "No Time Limits",
-    description: "Trade with MT5 powered by think markets.",
+    description: "Trade with TradingView powered by TradeLocker.",
   },
   {
     icon: PieIcon,
