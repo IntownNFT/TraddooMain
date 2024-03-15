@@ -9,7 +9,7 @@ const CompetitionsData = [
     description: "$1,950 In cash prizes + Challenge accounts",
     contestants: 121,
     isLive: true,
-    link: "/",
+    link: "https://prop.traddoo.com/competitions-overview",
   },
   {
     name: "Jan Competition",
