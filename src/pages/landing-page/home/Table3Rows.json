@@ -38,9 +38,9 @@
     },
     {
       "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "No",
-      "fundedSTPAccount": "No"
+      "evaluationPhase1": "Yes",
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Price (Refundable Fee)",
@@ -89,9 +89,9 @@
     
     {
       "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "No",
-      "fundedSTPAccount": "No"
+      "evaluationPhase1": "Yes",
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Price (Refundable Fee)",
@@ -141,8 +141,8 @@
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
-      "verificationPhase2": "No",
-      "fundedSTPAccount": "No"
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Price (Refundable Fee)",
@@ -192,8 +192,8 @@
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
-      "verificationPhase2": "No",
-      "fundedSTPAccount": "No"
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Price (Refundable Fee)",
@@ -243,8 +243,8 @@
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
-      "verificationPhase2": "No",
-      "fundedSTPAccount": "No"
+      "verificationPhase2": "Yes",
+      "fundedSTPAccount": "Yes"
     },
     {
       "name": "Price (Refundable Fee)",
