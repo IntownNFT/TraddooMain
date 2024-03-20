@@ -14,8 +14,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
       "fundedSTPAccount": "-"
     },
     {

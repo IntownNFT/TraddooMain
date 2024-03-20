@@ -21,7 +21,7 @@ const cards = [
   {
     icon: PieIcon,
     title: "80/20 Profit Split",
-    description: "10% profit target, 50% balance increase, every 3 months",
+    description: "10% profit target, 50% balance increase, every 3 months and with add-ons it can go up to 90/10 profit split!",
   },
   {
     icon: PowerIcon,

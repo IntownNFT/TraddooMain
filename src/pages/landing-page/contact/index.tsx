@@ -1,7 +1,6 @@
 import { FormEvent, useState } from "react";
 import SectionHeader from "../../../components/SectionHeader";
 import { Alert, Radio } from "@material-tailwind/react";
-import FormButton from "../../../components/FormButton";
 import axios from "axios";
 
 interface Input {
@@ -64,14 +63,17 @@ const ContactForm = () => {
   const [err, setErr] = useState("")
   const [success, setSuccess] = useState("")
   const [open, setOpen] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleSubmit = async (e: FormEvent) => {
 
     e.preventDefault()
+    setLoading(true)
 
     if (firstName === "" || lastName === "" || email === "" || phone === "") {
       setErr("Please fill in all the details.")
       setOpen(true)
+      setLoading(false)
       return
     }
 
@@ -83,12 +85,14 @@ const ContactForm = () => {
         phone,
         message
       }
-      await axios.post("http://localhost:3000/message", sender)
+      await axios.post("/message", sender)
       setSuccess("Message sent successfully!")
       setOpen(true)
+      setLoading(false)
     } catch (err: unknown) {
       setErr("Some error occured. Try again!")
       setOpen(true)
+      setLoading(false)
     }
   }
 
@@ -100,9 +104,9 @@ const ContactForm = () => {
 
   return (
     <>
-      <Alert open={open} onClose={closeAlert} className="w-full max-w-[806px] mx-auto my-3" color={success==="" ? "gray":"green"}>
-        {err==="" || <span>{err}</span>}
-        {success==="" || <span>{success}</span>}
+      <Alert open={open} onClose={closeAlert} className="w-full max-w-[806px] mx-auto my-3 bg-red font-bold font-raleway" color={success==="" ? "gray":"green"}>
+        {err==="" || err}
+        {/* {success==="" || <span>{success}</span>} */}
       </Alert>
       <form className="w-full max-w-[806px] mx-auto bg-dark-grey border border-light-grey rounded-lg font-poppins flex flex-col justify-center items-stretch gap-6 py-6 px-3 sm:p-6" onSubmit={handleSubmit}>
         <div className="flex gap-6 flex-wrap ">
@@ -146,7 +150,11 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <FormButton type="submit" text="Send Message" classes="font-poppins !font-medium" />
+        <button type="submit" className="w-full bg-blue font-rubik font-poppins font-medium text-base py-3 rounded-lg text-center hover:bg-opacity-80 transition-all" disabled={loading}>
+          {
+            loading ? "Loading..." : success ? "Sent": "Send Message"
+          }
+        </button>
       </form>
     </>
   );

@@ -62,30 +62,29 @@ const FormContent = () => {
   );
 };
 
-const CouponCode = () => {
-  return (
-    <div className="flex items-end justify-center gap-3 flex-wrap md:flex-nowrap">
-      <div className="flex flex-col gap-1 w-full">
-        <label htmlFor="coupon-code">Coupon Code</label>
-        <input
-          title="coupon-code"
-          type="text"
-          placeholder="Coupon Code"
-          className="font-inter text-white text-base placeholder:text-[#808080] bg-transparent border border-light-grey rounded-lg p-3 focus:outline-none focus:border-blue"
-        />
-      </div>
-      <FormButton type="button" text="Apply" />
-    </div>
-  );
-};
-
 const FormFooter = ({ newPrice }: { newPrice?: string }) => {
   const contextValue = useContext(ChallengeContext) || {
     activeType: 0,
     activeSize: 0,
     price: "",
   };
-  const { price } = contextValue;
+  const { activeSize, price } = contextValue;
+
+  const selectAcc = () => {
+    switch (activeSize) {
+      case 0:
+        return "$25K";
+      case 1:
+        return "$50K";
+      case 2:
+        return "$100K";
+      case 3:
+        return "$150K";
+      case 4:
+        return "$200K";
+    }
+  }
+
   return (
     <div className="flex items-center gap-5 flex-wrap-reverse">
       <FormButton
@@ -103,7 +102,7 @@ const FormFooter = ({ newPrice }: { newPrice?: string }) => {
             {newPrice ? newPrice : price}
           </span>
         </h3>
-        <p className="font-rubik text-[#93A1A6] text-xs">For $100K Account</p>
+        <p className="font-rubik text-[#93A1A6] text-xs">For {selectAcc()} Account</p>
       </div>
     </div>
   );
@@ -115,7 +114,7 @@ const Form = () => {
   return (
     <form className="p-6 pb-12 flex flex-col gap-5">
       {/* <Addons setPrice={setPriceAfterAddOn} /> */}
-      <CouponCode />
+      {/* <CouponCode /> */}
       <FormContent />
       <FormFooter />
     </form>
@@ -151,6 +150,25 @@ const StartChallengeForm = ({
 };
 
 export default StartChallengeForm;
+
+
+// const CouponCode = () => {
+//   return (
+//     <div className="flex items-end justify-center gap-3 flex-wrap md:flex-nowrap">
+//       <div className="flex flex-col gap-1 w-full">
+//         <label htmlFor="coupon-code">Coupon Code</label>
+//         <input
+//           title="coupon-code"
+//           type="text"
+//           placeholder="Coupon Code"
+//           className="font-inter text-white text-base placeholder:text-[#808080] bg-transparent border border-light-grey rounded-lg p-3 focus:outline-none focus:border-blue"
+//         />
+//       </div>
+//       <FormButton type="button" text="Apply" />
+//     </div>
+//   );
+// };
+
 
 // const Addons = ({setPrice}:{setPrice: (price: string)=>void}) => {
 

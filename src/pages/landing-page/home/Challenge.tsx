@@ -138,7 +138,7 @@ const Challenge = () => {
           />
           <Reminder />
         </div>
-        <div className="flex items-stretch gap-6 flex-wrap lg:flex-nowrap">
+        <div className="flex items-start gap-6 flex-wrap lg:flex-nowrap">
           <Table TABLE_HEAD={tableHead} TABLE_ROWS={tableRows} />
           <StartChallengeForm
             activeType={activeType}

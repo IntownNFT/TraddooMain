@@ -21,7 +21,7 @@ const Content = ({ id }: { id?: string }) => {
         className="font-kanit font-medium max-w-[300px] mx-auto -tracking-[1px] leading-[28px] text-xl sm:text-2xl text-center"
         id={id}
       >
-        The only Firm providing real capital and daily payouts.
+        The Firm providing real capital and daily payouts.
       </h2>
     </>
   );
