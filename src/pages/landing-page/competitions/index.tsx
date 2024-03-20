@@ -1,7 +1,8 @@
 import FAQs from "../../../components/FAQ/FAQs";
 import SectionHeader from "../../../components/SectionHeader";
 import Card from "./Card";
-import rules from "./rules.md"
+// import rules from "./rules.md"
+import { rules } from "./rules";
 
 const CompetitionsData = [
   {

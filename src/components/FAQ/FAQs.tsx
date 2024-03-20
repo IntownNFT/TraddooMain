@@ -1,12 +1,17 @@
 import Squeezebox from "../SqueezeBox";
-import { FAQsData } from "./FAQsData";
 
+interface FAQsProps {
+  file: {
+    Question: string;
+    Answer: string | JSX.Element;
+  }[]
+}
 
-const FAQs = () => {
+const FAQs = ({file}:FAQsProps) => {
 
   return (
     <div className="flex flex-col gap-8 mt-9">
-      {FAQsData.map((faq, index) => {
+      {file.map((faq, index) => {
         return (
           <Squeezebox
             title={<>{faq.Question}</>}
