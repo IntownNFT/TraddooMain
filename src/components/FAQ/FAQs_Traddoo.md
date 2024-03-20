@@ -143,17 +143,10 @@
 > Our support team is available 24/7. Simply contact our team via email
 > at support@traddoo.com, via Live Chat, or fill out the contact form.
 >
-> {thisisquestion}What are the restricted countries?
+> {thisisquestion}What are the restricted countriesAA?
 >
-> Unfortunately, we are unable to offer our services to the following
-> countries:
->
-> Afghanistan, Botswana, Burma (Myanmar), Democratic Republic of Congo,
-> Crimea, Cuba, Ethiopia, Iran, Iraq, Japan, Lebanon, Libya, Kenya,
-> North Korea, Pakistan, Republic of the Congo, Russian Federation,
-> Somalia, Sri Lanka, Sudan, Syria, Trinidad and Tobago, Tunisia,
-> Vietnam, Yemen, or Zimbabwe
->
+> Unfortunately, we are unable to offer our services to the following countries: Afghanistan, Botswana, Burma (Myanmar), Democratic Republic of Congo, Crimea, Cuba, Ethiopia, Iran, Iraq, Japan, Lebanon, Libya, Kenya, North Korea, Pakistan, Republic of the Congo, Russian Federation, Somalia, Sri Lanka, Sudan, Syria, Trinidad and Tobago, Tunisia, Vietnam, Yemen, or Zimbabwe
+
 > {thisisquestion}How Do I Get Started?
 >
 > Becoming a Traddoo Trader is as easy as ABC. Before you get started
@@ -223,7 +216,8 @@ cryptocurrency.*
 >
 > In order to use ETH (ERC-20), USDT (ERC-20), or USDC (ERC-20) you will
 > need to use the ERC-20 standard.
->
+> ====================================================================================================================
+> ====================================================================================================================
 > {thisisquestion}Is the fee refundable?
 >
 > Yes! Once you have successfully passed phases 1 and 2 of your
@@ -396,6 +390,10 @@ cryptocurrency.*
 > payment has been fully completed, you will receive your TradeLocker
 > credentials via email, and you will be ready to start.
 >
+=======================================================================================================
+=======================================================================================================
+=======================================================================================================
+=======================================================================================================
 > {thisisquestion}What other features are available?
 >
 > We want our traders to succeed, and that is why we offer a platform
@@ -597,6 +595,10 @@ cryptocurrency.*
 > If you are in violation of this rule this will lead to an automatic
 > failure of your challenge account.
 >
+
+=====================================================================================================
+=====================================================================================================
+=====================================================================================================
 > {thisisquestion}**I Have Passed Phase 2! What Next?**
 >
 > Congratulations on passing Phase 2. Your Traddoo Funded Account should
@@ -779,6 +781,10 @@ cryptocurrency.*
 > units of the asset you\'re trading, while the contract size is the
 > equivalent amount of the traded asset on the market.
 >
+===========================================================================================================
+===========================================================================================================
+===========================================================================================================
+
 > {thisisquestion}**Are Instant Funding Accounts Available?**
 >
 > At the time being, we do not offer an \"Instant Funding Account\"
@@ -981,6 +987,12 @@ cryptocurrency.*
 > If you do not pass our identity screening you will not be granted your
 > Funded Account.
 >
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+====================================================================================================
+
 > {thisisquestion}**What\'s The Maximum Number of Accounts Allowed?**
 >
 > We don\'t limit the number of challenges you can purchase, and you can
@@ -1035,7 +1047,12 @@ cryptocurrency.*
 >
 > In order to use ETH (ERC-20), USDT (ERC-20), or USDC (ERC-20) you will
 > need to use the ERC-20 standard.
->
+> =================================================================================
+> =================================================================================
+> =================================================================================
+> =================================================================================
+> =================================================================================
+> =================================================================================
 > {thisisquestion}**What Instruments are Available?**
 >
 > With Traddoo you can trade a variety of instruments, from currencies
@@ -1063,8 +1080,6 @@ cryptocurrency.*
 +-----------------------------------+-----------------------------------+
 | > CADCHFx                         | Forex X                           |
 +-----------------------------------+-----------------------------------+
-
-+-----------------------------------+-----------------------------------+
 | > CADJPYx                         | Forex X                           |
 +===================================+===================================+
 | > CHFJPYx                         | Forex X                           |
@@ -1088,8 +1103,6 @@ cryptocurrency.*
 | > EURUSDx                         | Forex X                           |
 +-----------------------------------+-----------------------------------+
 | > GBPAUDx                         | Forex X                           |
-+-----------------------------------+-----------------------------------+
-
 +-----------------------------------+-----------------------------------+
 | > GBPCADx                         | Forex X                           |
 +===================================+===================================+
@@ -1115,8 +1128,6 @@ cryptocurrency.*
 +-----------------------------------+-----------------------------------+
 | > USDJPYx                         | Forex X                           |
 +-----------------------------------+-----------------------------------+
-
-+-----------------------------------+-----------------------------------+
 | > USDNOKx                         | Forex X                           |
 +===================================+===================================+
 | > USDSEKx                         | Forex X                           |
@@ -1141,8 +1152,6 @@ cryptocurrency.*
 +-----------------------------------+-----------------------------------+
 | > XAGUSDx                         | SILVERX                           |
 +-----------------------------------+-----------------------------------+
-
-+-----------------------------------+-----------------------------------+
 | > BRENT                           | Commodities                       |
 +===================================+===================================+
 | > WTI                             | Commodities                       |
@@ -1166,8 +1175,6 @@ cryptocurrency.*
 | > NAS100                          | Indices                           |
 +-----------------------------------+-----------------------------------+
 | > SPX500                          | Indices                           |
-+-----------------------------------+-----------------------------------+
-
 +-----------------------------------+-----------------------------------+
 | > US30                            | Indices                           |
 +===================================+===================================+
@@ -1315,6 +1322,12 @@ cryptocurrency.*
 > may evolve over time, so it\'s advisable to visit the official Traddoo
 > website or contact their support team to stay up to date with the
 > latest developments!
+
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
+==================================================================================
 >
 > {thisisquestion}**What Are the Commissions and Contract Sizes on Traddoo?**
 >
@@ -1560,6 +1573,12 @@ cryptocurrency.*
 >
 > Click on each Account type to find out more details about them, or
 > head to our homepage to find a the comparison table
+
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
 >
 > {thisisquestion}**What Is the Traddoo 2-Phase Swing Trading Challenge?**
 >
