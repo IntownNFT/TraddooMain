@@ -10,7 +10,7 @@ interface FAQsProps {
 const FAQs = ({file}:FAQsProps) => {
 
   return (
-    <div className="flex flex-col gap-8 mt-9">
+    <div className="flex flex-col gap-8 mt-9" id="FAQs">
       {file.map((faq, index) => {
         return (
           <Squeezebox
