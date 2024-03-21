@@ -41,12 +41,12 @@ const CardHeader = ({ name, isLive }: HeaderProps) => {
   );
 };
 
-const CardBody = ({ text }: { text: string }) => {
-  return <p className="font-montserrat text-base ml-3 max-w-[333px]">{text}</p>;
+const CardBody = ({ text }: { text: string|undefined }) => {
+  return <p className="font-montserrat text-base ml-3 max-w-[333px]">{text && text}</p>;
 };
 
 interface Footer {
-  contestants: number;
+  contestants: number | string;
   competitionLink: string;
   isLive: boolean;
 }
@@ -82,8 +82,8 @@ const CardFooter = ({ contestants, competitionLink = "", isLive }: Footer) => {
 
 interface Card {
     name: string;
-    description: string;
-    contestants: number;
+    description?: string;
+    contestants: number | string;
     link: string;
     isLive: boolean;
 }

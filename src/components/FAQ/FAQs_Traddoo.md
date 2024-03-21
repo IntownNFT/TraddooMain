@@ -1331,16 +1331,14 @@ cryptocurrency.*
 >
 > {thisisquestion}**What Are the Commissions and Contract Sizes on Traddoo?**
 >
-> At Traddoo it is in our interest to offer our traders the tightest
-> spreads and best trading conditions. Below is a table outlining the
-> Contract Size, Minimum Step, and Commission for every instrument.
-> Please reach out to our Support Team if you have any questions.
->
-> Note: This list is effective as of 15/11/2023, and it may change
-> without notice. However, we will endeavor to communicate any changes
-> promptly.
->
-> Search:
+At Traddoo it is in our interest to offer our traders the tightest
+spreads and best trading conditions. Below is a table outlining the
+Contract Size, Minimum Step, and Commission for every instrument.
+Please reach out to our Support Team if you have any questions.
+Note: This list is effective as of 15/11/2023, and it may change
+without notice. However, we will endeavor to communicate any changes
+promptly.
+Search:
 
 +-------------+-------------+-------------+-------------+-------------+
 | >           | > *         | *           | **Min       | **          |
