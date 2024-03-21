@@ -1,9 +1,8 @@
 import Logo from "../../assets/logo.png";
 import Button from "../Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import MenuLink from "./MenuLink";
-import { useLocation } from "react-router-dom";
 
 const links = [
   {
@@ -24,14 +23,9 @@ const links = [
   },
 ];
 const LinkWrapper = () => {
-  const currentPath = useLocation().pathname
-  const [isHome, setIsHome] = useState(false)
-  useEffect(()=> {
-    setIsHome(currentPath === '/')
-  }, [currentPath])
   return (
     <div className="hidden md:flex items-center gap-6 text-base">
-      {!isHome && <MenuLink link={{page:'Home', path:'/'}} />}
+      <MenuLink link={{page:'Home', path:'/'}} />
       {links.map((link, index) => (
         <MenuLink key={index} link={link} />
       ))}

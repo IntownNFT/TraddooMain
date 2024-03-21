@@ -70,7 +70,7 @@ const MobileMenu = ({ links, open, setOpen }: MobileMenuInterface) => {
           {links.map((link, index) => (
             <MenuLink key={index} link={link} setOpen={setOpen} />
           ))}
-          <Button path="/" variant="primary" id="get-started" classes="font-inter text-xl mt-5">
+          <Button path="https://prop.traddoo.com/login" variant="primary" id="get-started" classes="font-inter text-xl mt-5">
             Start Trading
           </Button>
         </div>
