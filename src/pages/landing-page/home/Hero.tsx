@@ -39,7 +39,7 @@ const CTAButtons = ({ id }: { id?: string }) => {
         Start Trading
       </Button>
       <Button
-        path="https://prop.traddoo.com/buy-challenge/"
+        path="https://prop.traddoo.com/free-trial/"
         variant="secondary"
         classes="text-black font-inter font-medium px-8 py-3 w-full sm:w-auto"
         id={id}
