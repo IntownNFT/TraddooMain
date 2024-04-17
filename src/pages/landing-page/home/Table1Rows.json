@@ -2,7 +2,7 @@
   "t1_25k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "12%",
+      "evaluationPhase1": "14%",
       "fundedSTPAccount": "-"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "Yes",
+      "evaluationPhase1": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -49,7 +49,7 @@
   "t1_50k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "12%",
+      "evaluationPhase1": "14%",
       "fundedSTPAccount": "-"
     },
     {
@@ -79,7 +79,7 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "Yes",
+      "evaluationPhase1": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -96,7 +96,7 @@
   "t1_100k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "12%",
+      "evaluationPhase1": "14%",
       "fundedSTPAccount": "-"
     },
     {
@@ -126,7 +126,7 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "Yes",
+      "evaluationPhase1": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -143,7 +143,7 @@
   "t1_150k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "12%",
+      "evaluationPhase1": "14%",
       "fundedSTPAccount": "-"
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "Yes",
+      "evaluationPhase1": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -190,7 +190,7 @@
   "t1_200k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "12%",
+      "evaluationPhase1": "14%",
       "fundedSTPAccount": "-"
     },
     {
@@ -220,7 +220,7 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "Yes",
+      "evaluationPhase1": "45%",
       "fundedSTPAccount": "No"
     },
     {

@@ -14,9 +14,9 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -38,8 +38,8 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -70,9 +70,9 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -94,8 +94,8 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -126,9 +126,9 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -182,9 +182,9 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -238,9 +238,9 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "verificationPhase2": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "verificationPhase2": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
