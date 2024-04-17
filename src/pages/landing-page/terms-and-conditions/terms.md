@@ -208,74 +208,64 @@ CountryNews ReleaseSymbolsUSANon Farm PayrollsAllUSARetail SalesAllUSACPIAllUSAP
 
 13.6 The provisions of clause 13 are not intended to deprive the Customer of the Customer's consumer rights which cannot be excluded by law.
 
-14. DISCLAIMER
+14. VIOLATION OF THE GTC
 
-14.1 You recognize that the Services and other Content are given "as is" with all their errors, imperfections, and shortcomings, and you accept that using them is your sole responsibility and at your own risk. The Provider disavows any legal, contractual, or implicit warranties of any sort, including but not limited to warranties of quality, merchantability, suitability for a particular purpose, and non-infringement of any rights, to the maximum extent permitted by law.
+14.1 IF THE CUSTOMER VIOLATES ANY PROVISION OF THESE GTC IN A MANNER THAT MAY CAUSE ANY HARM TO THE PROVIDER, THE PROVIDER MAY PREVENT THE CUSTOMER FROM ORDERING ANY OTHER SERVICES AND COMPLETELY OR PARTIALLY RESTRICT THE CUSTOMER'S ACCESS TO ALL OR ONLY SOME SERVICES, INCLUDING ACCESS TO THE CLIENT PORTAL AND TRADING PLATFORM, WITHOUT ANY PRIOR NOTICE AND WITHOUT ANY COMPENSATION.
 
-14.2 The Provider shall not be liable for any damages, including indirect, incidental, special, punitive, or consequential damages, such as lost profits, loss of data, personal or non-monetary harm, or property damage, resulting from the use of the Services or reliance on any tool, functionality, information, or other content available in connection with the Services or on the Website. The Provider is not responsible for any third-party content, products, services, or applications that the Customer may use in connection with the Services. To the maximum extent permitted by applicable laws, the Provider disclaims any statutory, contractual, express, and implied warranties of any kind, including any warranty of quality, merchantability, fitness for a particular purpose, or non-infringement of any rights. In the event that the Provider's liability is established in connection with the operation of the Website or provision of the Services by a court of justice or any other competent authority, this liability shall be limited to the amount equivalent to the fee paid by the Customer for the Services that caused the loss.
+15. COMMUNICATION
 
-14.3 The Provider reserves the right to modify, change, replace, add, or remove any elements and functions of the Services at any time without any compensation.
+15.1 You acknowledge and agree that all communication from the Provider or its partners in connection with the provision of Services will take place through the Client Portal or your e-mail address which you register with us, as applicable. Written electronic communication by e-mail or through the Client Portal is also considered to be written communication.
 
-14.4 The Provider shall not be held responsible if it fails to deliver the purchased Services due to severe technical or operational issues that are beyond its control, or during a crisis or impending crisis, natural calamity, war, rebellion, pandemic, a threat to a large number of people, or other force majeure events. Additionally, if the Provider is unable to provide the Services due to any legal obligations or a directive from a public authority, it will not be held liable.
+15.2 Our contact e-mail address is support@Traddoo.com and our contact address is 30/1, Kenilworth Court, Sir Augustus Bartolo Street, Ta'Xbiex XBX1093, Malta.
 
-15. VIOLATION OF THE GTC
+16. RIGHT TO WITHDRAW FROM A CONTRACT
 
-15.1 IF THE CUSTOMER VIOLATES ANY PROVISION OF THESE GTC IN A MANNER THAT MAY CAUSE ANY HARM TO THE PROVIDER, THE PROVIDER MAY PREVENT THE CUSTOMER FROM ORDERING ANY OTHER SERVICES AND COMPLETELY OR PARTIALLY RESTRICT THE CUSTOMER'S ACCESS TO ALL OR ONLY SOME SERVICES, INCLUDING ACCESS TO THE CLIENT PORTAL AND TRADING PLATFORM, WITHOUT ANY PRIOR NOTICE AND WITHOUT ANY COMPENSATION.
+16.1 If you are a consumer, you have the right to withdraw from a contract without giving a reason within 14 days of its execution. PLEASE NOTE THAT IF YOU START PERFORMING DEMO TRADES BEFORE THE EXPIRY OF THE SPECIFIED TIME LIMIT, YOU LOSE YOUR RIGHT TO WITHDRAW FROM THE CONTRACT.
 
-16. COMMUNICATION
+16.1.1 For the avoidance of doubt, throughout the fourteen (14) days immediately following the date of the Customer's first subscription to the Services, the Customer may be entitled to cancellation with a fee refund, should the respective account remain inactive, or otherwise the Customer have effected no trade order placement, during the consecutive days counted from the subscription date until the date of the request for cancellation pursuant to § 16.2 hereinbelow.
 
-16.1 You acknowledge and agree that all communication from the Provider or its partners in connection with the provision of Services will take place through the Client Portal or your e-mail address which you register with us, as applicable. Written electronic communication by e-mail or through the Client Portal is also considered to be written communication.
+16.2 To withdraw from the contract, you must send an email to support@Traddoo.com within the specified time limit. If you do withdraw from the contract, we will refund you all fees we have received from you without undue delay, no later than 14 days after your withdrawal. The refund will be made in the same way you paid the fees.
 
-16.2 Our contact e-mail address is support@Traddoo.com and our contact address is 30/1, Kenilworth Court, Sir Augustus Bartolo Street, Ta'Xbiex XBX1093, Malta.
+16.3 The Provider is entitled to immediately withdraw from the contract in the case of any breach by the Customer specified in Clause 15.
 
-17. RIGHT TO WITHDRAW FROM A CONTRACT
+17. DEFECTIVE PERFORMANCES
 
-17.1 If you are a consumer, you have the right to withdraw from a contract without giving a reason within 14 days of its execution. PLEASE NOTE THAT IF YOU START PERFORMING DEMO TRADES BEFORE THE EXPIRY OF THE SPECIFIED TIME LIMIT, YOU LOSE YOUR RIGHT TO WITHDRAW FROM THE CONTRACT.
+17.1 If the Services do not correspond to what was agreed or have not been provided to you, you can exercise your rights from defective performance. The Provider does not provide any guarantee for the quality of the services. You must notify us of the defect without undue delay by sending an email to support@Traddoo.com When exercising the rights from defective performance, you may request that we remedy the defect or provide you with a reasonable If the defect cannot be remedied, you can withdraw from the contract or claim a reasonable discount on a case-by-case basis.
 
-17.1.1 For the avoidance of doubt, throughout the fourteen (14) days immediately following the date of the Customer's first subscription to the Services, the Customer may be entitled to cancellation with a fee refund, should the respective account remain inactive, or otherwise the Customer have effected no trade order placement, during the consecutive days counted from the subscription date until the date of the request for cancellation pursuant to § 17.2 hereinbelow.
+17.2 We will try to resolve any complaint you may lodge as soon as possible (no later than within 30 calendar days), and we will confirm its receipt and settlement to you in writing. If we do not settle the complaint in time, you have the right to withdraw from the contract. You can file a complaint as per clause 20.
 
-17.2 To withdraw from the contract, you must send an email to support@Traddoo.com within the specified time limit. If you do withdraw from the contract, we will refund you all fees we have received from you without undue delay, no later than 14 days after your withdrawal. The refund will be made in the same way you paid the fees.
+18. CHANGES TO THE GTC
 
-17.3 The Provider is entitled to immediately withdraw from the contract in the case of any breach by the Customer specified in Clause 15.
+18.1 Please note that the Provider might change the content of these GTC from time to time, therefore the content of new GTC will prevail. Nonetheless, the Provider will notify you upon such changes taking effect via Client Portal or via email. The Traddoo Evaluation and the subsequent Traddoo Verification are provided throughout the period of their duration pursuant to the version of the GTC which was valid and effective at the time at which the relevant Traddoo Evaluation was ordered.
 
-18. DEFECTIVE PERFORMANCES
+19. COMPLAINTS
 
-18.1 If the Services do not correspond to what was agreed or have not been provided to you, you can exercise your rights from defective performance. The Provider does not provide any guarantee for the quality of the services. You must notify us of the defect without undue delay by sending an email to support@Traddoo.com When exercising the rights from defective performance, you may request that we remedy the defect or provide you with a reasonable If the defect cannot be remedied, you can withdraw from the contract or claim a reasonable discount on a case-by-case basis.
+19.1 The Provider takes your complaints seriously and shall use its best endeavours to resolve Your complaint as soon as possible.
 
-18.2 We will try to resolve any complaint you may lodge as soon as possible (no later than within 30 calendar days), and we will confirm its receipt and settlement to you in writing. If we do not settle the complaint in time, you have the right to withdraw from the contract. You can file a complaint as per clause 20.
+19.2 If You have a complaint to make regarding our services, contact us via complaints@Traddoo.com
 
-19. CHANGES TO THE GTC
+19.3 We encourage You to establish contact as soon as circumstances for a complaint arise and in no case later than 6 months of the occurrence thereof. We will acknowledge any complaint made by You immediately, or in any event, within 24 hours thereof. Your complaint will be escalated to the appropriate personnel. If Your complaint remains unresolved after a period of 10 days, we shall:
 
-19.1 Please note that the Provider might change the content of these GTC from time to time, therefore the content of new GTC will prevail. Nonetheless, the Provider will notify you upon such changes taking effect via Client Portal or via email. The Traddoo Evaluation and the subsequent Traddoo Verification are provided throughout the period of their duration pursuant to the version of the GTC which was valid and effective at the time at which the relevant Traddoo Evaluation was ordered.
+19.4 Write to You explaining the final decision;
 
-20. COMPLAINTS
+19.5 Clarify that this is the end of our internal complaints process;
 
-2.1 The Provider takes your complaints seriously and shall use its best endeavours to resolve Your complaint as soon as possible.
+19.6 At your own discretion, guide you on how to make a complaint to Malta Competition and Consumer Affairs Authority.
 
-20.2 If You have a complaint to make regarding our services, contact us via complaints@Traddoo.com
+20 CHOICE OF LAW AND JURISDICTION
 
-20.3 We encourage You to establish contact as soon as circumstances for a complaint arise and in no case later than 6 months of the occurrence thereof. We will acknowledge any complaint made by You immediately, or in any event, within 24 hours thereof. Your complaint will be escalated to the appropriate personnel. If Your complaint remains unresolved after a period of 10 days, we shall:
+20.1. Any legal relations established by these GTC or related to them, as well as any related non-contractual legal relations, shall be governed by the laws of Malta. The Parties irrevocably agree that the courts of Malta shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with the GTC or its subject matter or formation (including non-contractual disputes or claims).
 
-20.4 Write to You explaining the final decision;
+20.2. The provisions of clause 20.1. do not deprive the consumers of the protection afforded to them by the mandatory laws of the relevant Member State of the European Union or any other jurisdiction.
 
-20.5 Clarify that this is the end of our internal complaints process;
+21. FINAL PROVISIONS
 
-20.6 At your own discretion, guide you on how to make a complaint to Malta Competition and Consumer Affairs Authority.
+21.1 These GTC constitute the entire agreement between you and us and supersede all prior agreements relating to the subject matter of the GTC, whether verbal or written, with respect to the subject matter hereof.
 
-21 CHOICE OF LAW AND JURISDICTION
+21.2 Nothing in these GTC is intended to limit any legal claims set out elsewhere in these GTC or arising from the applicable law. If the Provider or any third party authorized thereto does not enforce the compliance with these GTC, or delays exercising its rights under this GTC, this can in no way be construed as a waiver of any right or claim.
 
-21.1. Any legal relations established by these GTC or related to them, as well as any related non-contractual legal relations, shall be governed by the laws of Malta. The Parties irrevocably agree that the courts of Malta shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with the GTC or its subject matter or formation (including non-contractual disputes or claims).
+21.3 The acknowledge and agree that the Provider may assign any claim arising to the Provider from these GTC or any agreement to a third party without your consent. The Customer is not authorized to transfer or assign the Customer's rights and obligations under these GTC or any agreements or parts thereof, or any receivables arising from them, in whole or in part, to any third party.
 
-21.2. The provisions of clause 21.1. do not deprive the consumers of the protection afforded to them by the mandatory laws of the relevant Member State of the European Union or any other jurisdiction.
+21.4 Should any part, term or provision of GTC be declared invalid, void or unenforceable, all remaining parts terms and provisions hereof shall remain in full force and effect and shall in no way be invalidated, impaired or affected thereby.
 
-22. FINAL PROVISIONS
-
-22.1 These GTC constitute the entire agreement between you and us and supersede all prior agreements relating to the subject matter of the GTC, whether verbal or written, with respect to the subject matter hereof.
-
-22.2 Nothing in these GTC is intended to limit any legal claims set out elsewhere in these GTC or arising from the applicable law. If the Provider or any third party authorized thereto does not enforce the compliance with these GTC, or delays exercising its rights under this GTC, this can in no way be construed as a waiver of any right or claim.
-
-22.3 The acknowledge and agree that the Provider may assign any claim arising to the Provider from these GTC or any agreement to a third party without your consent. The Customer is not authorized to transfer or assign the Customer's rights and obligations under these GTC or any agreements or parts thereof, or any receivables arising from them, in whole or in part, to any third party.
-
-22.4 Should any part, term or provision of GTC be declared invalid, void or unenforceable, all remaining parts terms and provisions hereof shall remain in full force and effect and shall in no way be invalidated, impaired or affected thereby.
-
-22.5 Prior to the acceptance of these GTC, the Customer has carefully assessed the possible risks arising from them and accept those risks.
+21.5 Prior to the acceptance of these GTC, the Customer has carefully assessed the possible risks arising from them and accept those risks.
