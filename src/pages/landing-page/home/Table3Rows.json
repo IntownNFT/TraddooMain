@@ -197,7 +197,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$819",
+      "evaluationPhase1": "$899",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
     }
@@ -248,7 +248,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$1,079",
+      "evaluationPhase1": "$1199",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
     }
