@@ -132,7 +132,24 @@ INTRODUCTORY PROVISIONS
 
 10.1 Significant releases and events. It is the trader's responsibility to have all positions for the associated symbols, as listed hereunder, closed no later than two (2) minutes in advance of the economic releases pursuant to the respective economic calendar:
 
-CountryNews ReleaseSymbolsUSANon Farm PayrollsAllUSARetail SalesAllUSACPIAllUSAPPIAllUSAMichigan Consumer sentimentAllUSAGDP q/qAllUSACore PCE Price Index m/mAllUSAADP Non-Farm Employment ChangeAllUSAISM Manufacturing PMIAllUSAISM Services PMIAllUSACrude Oil Inventories (EIA)USOil, UKOilUSANatural Gas Inventories (EIA)NGASUSAFED Interest Rate decisionAllEUECB Interest rate decisionAll EUR FX pairsUKBOE Interest Rate decisionAll GBP FX pairs
+| Country | News Release                   | Symbols          |
+|---------|--------------------------------|------------------|
+| USA     | Non Farm Payrolls              | All              |
+| USA     | Retail Sales                   | All              |
+| USA     | CPI                            | All              |
+| USA     | PPI                            | All              |
+| USA     | Michigan Consumer sentiment   | All              |
+| USA     | GDP q/q                        | All              |
+| USA     | Core PCE Price Index m/m      | All              |
+| USA     | ADP Non-Farm Employment Change| All              |
+| USA     | ISM Manufacturing PMI         | All              |
+| USA     | ISM Services PMI              | All              |
+| USA     | Crude Oil Inventories (EIA)   | USOil, UKOil    |
+| USA     | Natural Gas Inventories (EIA) | NGAS             |
+| USA     | FED Interest Rate decision    | All              |
+| EU     | ECB Interest rate decision    | All EUR FX pairs|
+| UK     | BOE Interest Rate decision    | All GBP FX pairs|
+
 
 10.1.1 The foregoing notwithstanding, we keep an updated list of further important releases, or significant events, and their associated symbols, at www.Traddoo.com/economic-calendar, in relation to which new positions must not be opened before and during the two (2) minutes following the economic release pursuant to the respective economic calendar.
 

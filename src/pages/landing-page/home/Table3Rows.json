@@ -37,6 +37,12 @@
       "fundedSTPAccount": "up to 1:30"
     },
     {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
+      "fundedSTPAccount": "No"
+    },
+    {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
       "verificationPhase2": "Yes",
@@ -86,7 +92,12 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
+      "fundedSTPAccount": "No"
+    },
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -137,7 +148,12 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
+      "fundedSTPAccount": "No"
+    },
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -188,7 +204,12 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
+      "fundedSTPAccount": "No"
+    },
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",
@@ -239,7 +260,12 @@
       "verificationPhase2": "up to 1:30",
       "fundedSTPAccount": "up to 1:30"
     },
-    
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
+      "fundedSTPAccount": "No"
+    },
     {
       "name": "Hold Over Weekend & News Trading",
       "evaluationPhase1": "Yes",

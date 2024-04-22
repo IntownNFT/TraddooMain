@@ -99,7 +99,7 @@ export const FAQsData = [
   {
     Question: "Do You Offer a Free Trial of the Challenge?",
     Answer:
-      "Yes! With Traddoo you can sign up for as many Free Trials as you need to practice and get comfortable with our rules! What's more important, if you profit >0.1% in your Free Trial, you can convert it in a Funded Account Challenge and carry over the profit (up to a maximum of 5%), this way you'll get a head start!",
+      "Yes! With Traddoo you can sign up for as many Free Trials as you need to practice and get comfortable with our rules! What's more important, if you profit >0.1% in your Free Trial, you can convert it in a Funded Account Challenge and carry over the profit (up to a maximum of 4.5%), this way you'll get a head start!",
   },
   {
     Question: "Why Choose Traddoo?",
@@ -242,8 +242,7 @@ export const FAQsData = [
   },
   {
     Question: "What are the Min & Max Trading Days?",
-    Answer:
-      "The Traddoo challenge has a minimum trading rule. To meet this objective, you must trade for at least 5 days during your challenge. This means you must open at least one position on each of these days.",
+    Answer: "The Traddoo' challenge has no minimum Trading Days Rule.",
   },
   {
     Question: "How do you define a trading day?",
@@ -273,7 +272,7 @@ export const FAQsData = [
   {
     Question: "What is the Consistency Rule?",
     Answer:
-      "The Consistency Rule in Traddoo is designed to ensure you achieve steady and sustainable profits while effectively managing risk. The rule states that the earnings of your best trading day should not exceed 60% of your total profits. The Consistency Rule only applies during Phase 2 (Verification) of the Regular Challenge and during the only Phase of the Fast Track Challenge. It does not apply to our Swing Challenges.",
+      "The Consistency Rule in Traddoo is designed to ensure you achieve steady and sustainable profits while effectively managing risk. The rule states that the earnings of your best trading day should not exceed 45% of your total profits. The Consistency Rule applies to both Phases of Day Trading and Swing challenge types and only Phase of Single Phase Challenge",
   },
   {
     Question: "Why is the Consistency Rule Important?",
@@ -282,13 +281,56 @@ export const FAQsData = [
   },
   {
     Question: "When is the Consistency Rule required and how is it calculated?",
-    Answer:
-      "The Consistency Rule applies solely to Phase 2 (Verification) of the Funded Account Challenge. Here, you have the chance to demonstrate your ability to manage risk effectively and build consistent success. The calculation is as follows: Best Day Profit ÷ Overall Profit = Best Day % of Total Profit Let's illustrate this with a new example: Imagine a $25,000 account with a Phase 2 profit target of $2,000 (8%). The daily profit should never exceed $1,200, which is 60% of total profits. Consider this scenario: ● You reach your target and make a total profit of $2,000.● You earn a $1,200 profit in a single day. Result: You do not pass the Challenge. To succeed, you should devise a strategy that prevents you from exceeding a $1,200 daily profit. Once you reach a total profit of $2,000, you will pass the Challenge as you have demonstrated that you can profit consistently without relying on risky large trades. Here is another example taking into consideration multiple trading days in the challenge: 5 trading days with the following results, day-by-day: ● +$1,000● -$500● +$2,000● +$750● -$250 This results in a total P/L of $3,000. The highest profit day was the day of +$2,000, so we arrive at the following calculation and value: $2,000 / $3,000 * 100 = ~0.667 * 100 = ~66.67% Highest Profit Day",
+    Answer: (
+      <p>
+        The Consistency Rule applies to all phases of the Funded Account
+        Challenge. Here, you have the chance to demonstrate your ability to
+        manage risk effectively and build consistent success. The calculation is
+        as follows: Best Day Profit ÷ Overall Profit = Best Day % of Total
+        Profit Let's illustrate this with a new example: Imagine a $25,000
+        account with a Phase 2 profit target of $2,000 (8%). The daily profit
+        should never exceed $900, which is 45% of total profits. Consider this
+        scenario:
+        <ul className="space-y-4">
+          <li>● You reach your target and make a total profit of $2,000.</li>
+          <li>
+          ● You earn a $900 profit in a single day. Result: You do not pass the
+            Challenge. To succeed, you should devise a strategy that prevents
+            you from exceeding a $900 daily profit.
+          </li>
+          <li>
+          ● Once you reach a total profit of $2,000, you will pass the Challenge
+            as you have demonstrated that you can profit consistently without
+            relying on risky large trades.
+          </li>
+          <li>
+            Here is another example taking into consideration multiple trading
+            days in the challenge:
+          </li>
+          <li>5 trading days with the following results, day-by-day:</li>
+            <li>+ $1,000</li>
+            <li>- $500</li>
+            <li>+ $2,000</li>
+            <li>+ $750</li>
+            <li>- $250</li>
+          <li>
+            This results in a total P/L of $3,000. The highest profit day was
+            the day of +$2,000, so we arrive at the following calculation and
+            value:
+          </li>
+          <ul>
+            <li>
+              $2,000 / $3,000 * 100 = ~0.667 * 100 = ~66.67% Highest Profit Day
+            </li>
+          </ul>
+        </ul>
+      </p>
+    ),
   },
   {
     Question: "What is meant by the Recommended Best Day?",
     Answer:
-      "Given that your best trading day should remain below 60% of your total profit, we recommend that you set a daily profit target below this threshold. This strategy will help you maintain consistency and lock in daily profits. Here are examples of recommended best day profits by account size: $25k Account: Less than $1,200; $50k Account: Less than $2,400; $100k Account: Less than $4,800; $150k Account: Less than $7,200; $200k Account: Less than $9,600",
+      "Given that your best trading day should remain below 45% of your total profit, we recommend that you set a daily profit target below this threshold. This strategy will help you maintain consistency and lock in daily profits. Here are the examples of best day profits by account size during Phase 1: Less than $1125, Less than $2250, Less than $4500, Less than $6750, Less than $9000",
   },
   {
     Question: "Can I Reset My Challenge?",
@@ -298,7 +340,7 @@ export const FAQsData = [
   {
     Question: "Who can Reset their Challenges?",
     Answer:
-      "If you have a Regular or Swing Challenge, you can reset it only during Phase 1. Fast Track Challenges can also be reset.",
+      "If you have a Day Trading or Swing Challenge, you can reset it only during Phase 1. Single Phase Challenges can also be reset.",
   },
   {
     Question: "How does the reset help?",
@@ -447,8 +489,17 @@ export const FAQsData = [
     Question: "What Are the Commissions and Contract Sizes on Traddoo?",
     Answer: (
       <>
-        At Traddoo it is in our interest to offer our traders the tightest spreads and best trading conditions. Below is a table outlining the Contract Size, Minimum Step, and Commission for every instrument. Please reach out to our Support Team if you have any questions.<br/><br/> Note: This list is effective as of 15/11/2023, and it may change without notice. However, we will endeavor to communicate any changes promptly.<br/><br/> Search: <br/><br/>
-
+        At Traddoo it is in our interest to offer our traders the tightest
+        spreads and best trading conditions. Below is a table outlining the
+        Contract Size, Minimum Step, and Commission for every instrument. Please
+        reach out to our Support Team if you have any questions.
+        <br />
+        <br /> Note: This list is effective as of 15/11/2023, and it may change
+        without notice. However, we will endeavor to communicate any changes
+        promptly.
+        <br />
+        <br /> Search: <br />
+        <br />
         <table>
           <thead>
             <tr>
@@ -678,235 +729,235 @@ export const FAQsData = [
               <td>$7/lot</td>
             </tr>
             <tr>
-                <td>USDSEKx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>USDSEKx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>USDSGDx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>USDSGDx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>EURHUFx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>EURHUFx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>USDMXNx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>USDMXNx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>USDZARx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>USDZARx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>EURZARx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>EURZARx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>EURPLNx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>EURPLNx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>GBPZARx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>GBPZARx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>USDCNHx</td>
-                <td>Forex X</td>
-                <td>100000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>USDCNHx</td>
+              <td>Forex X</td>
+              <td>100000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>XAUUSDx</td>
-                <td>GOLD X</td>
-                <td>100</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>XAUUSDx</td>
+              <td>GOLD X</td>
+              <td>100</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>XAGUSDx</td>
-                <td>SILVER X</td>
-                <td>5000</td>
-                <td>0.01</td>
-                <td>$7/lot</td>
+              <td>XAGUSDx</td>
+              <td>SILVER X</td>
+              <td>5000</td>
+              <td>0.01</td>
+              <td>$7/lot</td>
             </tr>
             <tr>
-                <td>BRENT</td>
-                <td>Commodities</td>
-                <td>100</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>BRENT</td>
+              <td>Commodities</td>
+              <td>100</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>WTI</td>
-                <td>Commodities</td>
-                <td>100</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>WTI</td>
+              <td>Commodities</td>
+              <td>100</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>NGAS</td>
-                <td>Commodities</td>
-                <td>1000</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>NGAS</td>
+              <td>Commodities</td>
+              <td>1000</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>AUS200</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>AUS200</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>ESTX50</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>ESTX50</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>FRA40</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>FRA40</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>GER40</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>GER40</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>UK100</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>UK100</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>SPAIN35</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>SPAIN35</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>JPN225</td>
-                <td>Indices</td>
-                <td>100</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>JPN225</td>
+              <td>Indices</td>
+              <td>100</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>NAS100</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>NAS100</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>SPX500</td>
-                <td>Indices</td>
-                <td>10</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>SPX500</td>
+              <td>Indices</td>
+              <td>10</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>US30</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>US30</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>US2000</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>US2000</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>VIX</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>VIX</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>USDINDEX</td>
-                <td>Indices</td>
-                <td>100</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>USDINDEX</td>
+              <td>Indices</td>
+              <td>100</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>CHINA50</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>CHINA50</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>HK50</td>
-                <td>Indices</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>HK50</td>
+              <td>Indices</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>BTCUSD</td>
-                <td>BTC</td>
-                <td>1</td>
-                <td>0.01</td>
-                <td>no</td>
+              <td>BTCUSD</td>
+              <td>BTC</td>
+              <td>1</td>
+              <td>0.01</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>ETHUSD</td>
-                <td>Crypto</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>ETHUSD</td>
+              <td>Crypto</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>LTCUSD</td>
-                <td>Crypto</td>
-                <td>1</td>
-                <td>0.1</td>
-                <td>no</td>
+              <td>LTCUSD</td>
+              <td>Crypto</td>
+              <td>1</td>
+              <td>0.1</td>
+              <td>no</td>
             </tr>
             <tr>
-                <td>BCHUSD</td>
-                <td>Crypto</td>
-                <td>1</td>
-                <td></td>
-                <td></td>
+              <td>BCHUSD</td>
+              <td>Crypto</td>
+              <td>1</td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>
@@ -921,7 +972,7 @@ export const FAQsData = [
   {
     Question: "TYPES OF FUNDED ACCOUNT CHALLENGE",
     Answer:
-      "Traddoo Funded Challenge Types Overview Traddoo offers three Challenge types, specifically designed to suit different trading strategies and styles. All Traddoo Funded Account Challenges have these features in common: - Daily payouts once you get funded - EAs are allowed - Up to 90/10 profit split - Unlimited time to pass the Challenge - Scale your Funded Account to $5 million The three Challenge types we offer are: - Click on each Account type to find out more details about them, or head to our homepage to find a the comparison table",
+      "Traddoo Funded Challenge Types Overview Traddoo offers three Challenge types, specifically designed to suit different trading strategies and styles. All Traddoo Funded Account Challenges have these features in common: - Daily payouts once you get funded - EAs are not allowed - Up to 80/20 profit split - Unlimited time to pass the Challenge - Scale your Funded Account to $5 million The three Challenge types we offer are: - Click on each Account type to find out more details about them, or head to our homepage to find a the comparison table",
   },
   {
     Question: "What Is the Traddoo Single Phase Trading Challenge?",
@@ -929,14 +980,8 @@ export const FAQsData = [
       <>
         <p>
           Traddoo's Single Phase Challenges have been engineered so that traders
-          who have tried and tested strategies can get funded faster. This
-          Account type offers several add-ons for further customization:
+          who have tried and tested strategies can get funded faster.
         </p>
-        <ul>
-          <li>90/10 Profit Split</li>
-          <li>News Holding</li>
-          <li>Higher Leverage</li>
-        </ul>
         <h3>Single Phase Challenge Pricing</h3>
         <table>
           <thead>
@@ -959,11 +1004,11 @@ export const FAQsData = [
               <td>$100,000</td>
             </tr>
             <tr>
-              <td>$749</td>
+              <td>$819</td>
               <td>$150,000</td>
             </tr>
             <tr>
-              <td>$989</td>
+              <td>$1099</td>
               <td>$200,000</td>
             </tr>
           </tbody>
@@ -976,7 +1021,7 @@ export const FAQsData = [
         <table>
           <thead>
             <tr>
-              <th>Swing Account</th>
+              <th>Single Phase Account</th>
               <th>Phase 1</th>
               <th>Funded Account</th>
             </tr>
@@ -994,7 +1039,7 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>Profit Target</td>
-              <td>12%</td>
+              <td>14%</td>
               <td>n/a</td>
             </tr>
             <tr>
@@ -1004,7 +1049,7 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>Minimum Trading Days</td>
-              <td>5</td>
+              <td>1</td>
               <td>n/a</td>
             </tr>
             <tr>
@@ -1014,8 +1059,8 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>News Holding</td>
-              <td>Yes*</td>
-              <td>Yes*</td>
+              <td>No</td>
+              <td>No</td>
             </tr>
             <tr>
               <td>News Trading</td>
@@ -1029,7 +1074,6 @@ export const FAQsData = [
             </tr>
           </tbody>
         </table>
-        <p>*With add-on</p>
         <h3>Single Phase Challenge Leverages</h3>
         <table>
           <thead>
@@ -1096,11 +1140,11 @@ export const FAQsData = [
               <td>$100,000</td>
             </tr>
             <tr>
-              <td>$749</td>
+              <td>$819</td>
               <td>$150,000</td>
             </tr>
             <tr>
-              <td>$989</td>
+              <td>$1099</td>
               <td>$200,000</td>
             </tr>
           </tbody>
@@ -1109,7 +1153,7 @@ export const FAQsData = [
         <table>
           <thead>
             <tr>
-              <th>Swing Account</th>
+              <th>Day Trading Account</th>
               <th>Phase 1</th>
               <th>Phase 2</th>
               <th>Funded Account</th>
@@ -1142,8 +1186,8 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>Minimum Trading Days</td>
-              <td>5</td>
-              <td>5</td>
+              <td>1</td>
+              <td>1</td>
               <td>n/a</td>
             </tr>
             <tr>
@@ -1166,7 +1210,7 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>Consistency Rule</td>
-              <td>No</td>
+              <td>Yes</td>
               <td>Yes</td>
               <td>No</td>
             </tr>
@@ -1234,12 +1278,12 @@ export const FAQsData = [
               <td>10.0</td>
             </tr>
             <tr>
-              <td>$819</td>
+              <td>$899</td>
               <td>$150,000</td>
               <td>15.0</td>
             </tr>
             <tr>
-              <td>$1,079</td>
+              <td>$1,179</td>
               <td>$200,000</td>
               <td>20.0</td>
             </tr>
@@ -1310,8 +1354,8 @@ export const FAQsData = [
             </tr>
             <tr>
               <td>Consistency Rule</td>
-              <td>No</td>
-              <td>No</td>
+              <td>Yes</td>
+              <td>Yes</td>
               <td>No</td>
             </tr>
           </tbody>
