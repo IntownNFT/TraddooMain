@@ -150,8 +150,8 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -206,8 +206,8 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
       "fundedSTPAccount": "No"
     },
     {
@@ -262,8 +262,8 @@
     },
     {
       "name": "Consistency Rule",
-      "evaluationPhase1": "No",
-      "verificationPhase2": "Yes",
+      "evaluationPhase1": "45%",
+      "verificationPhase2": "45%",
       "fundedSTPAccount": "No"
     },
     {
