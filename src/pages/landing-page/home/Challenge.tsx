@@ -72,18 +72,24 @@ const Challenge = () => {
     let selectedAmount = "";
     switch (activeSize) {
       case 0:
-        selectedAmount = "25k";
+        selectedAmount = "5k";
         break;
       case 1:
-        selectedAmount = "50k";
+        selectedAmount = "10k";
         break;
       case 2:
-        selectedAmount = "100k";
+        selectedAmount = "25k";
         break;
       case 3:
-        selectedAmount = "150k";
+        selectedAmount = "50k";
         break;
       case 4:
+        selectedAmount = "100k";
+        break;
+      case 5:
+        selectedAmount = "150k";
+        break;
+      case 6:
         selectedAmount = "200k";
         break;
     }

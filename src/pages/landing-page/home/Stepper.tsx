@@ -58,6 +58,8 @@ const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}
   ];
 
   const size_steps = [
+    { title: "$5k", isPopular: false },
+    { title: "$10k", isPopular: false },
     { title: "$25k", isPopular: false },
     { title: "$50k", isPopular: false },
     { title: "$100k", isPopular: true },
@@ -66,7 +68,7 @@ const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}
   ];
 
   return (
-    <div className="font-rubik font-medium text-3xl sm:w-3/4 w-5/6">
+    <div className="steps-scroller font-rubik font-medium text-3xl sm:w-3/4 w-full mb-2 overflow-x-auto sm:overflow-x-visible">
       <h3 className="mb-0">Type:</h3>
       <div className="w-full md:w-2/3 lg:w-1/3">
         <Steps
@@ -76,7 +78,7 @@ const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}
         />
       </div>
       <h3 className="mt-6 mb-0">Size:</h3>
-      <div className="w-full max-w-[800px]">
+      <div className="w-96 sm:w-full max-w-[800px]">
         <Steps
           activeStep={activeSize}
           setActiveStep={setActiveSize}

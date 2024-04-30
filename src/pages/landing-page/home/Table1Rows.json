@@ -1,4 +1,98 @@
 {
+  "t1_5k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "14%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$1,000 (4%)",
+      "fundedSTPAccount": "$1,250 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$1,750 (7%)",
+      "fundedSTPAccount": "$2,500 (10%)"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:50",
+      "fundedSTPAccount": "up to 1:50"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "Hold over news with add-on",
+      "fundedSTPAccount": "Hold over news with add-on"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$249",
+      "fundedSTPAccount": "Refund"
+    }
+  ],
+  "t1_10k": [
+    {
+      "name": "Profit Target",
+      "evaluationPhase1": "14%",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Challenge Duration",
+      "evaluationPhase1": "Unlimited",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Minimum Trading Days",
+      "evaluationPhase1": "5",
+      "fundedSTPAccount": "-"
+    },
+    {
+      "name": "Max Daily Drawdown",
+      "evaluationPhase1": "$1,000 (4%)",
+      "fundedSTPAccount": "$1,250 (5%)"
+    },
+    {
+      "name": "Max Overall Drawdown",
+      "evaluationPhase1": "$1,750 (7%)",
+      "fundedSTPAccount": "$2,500 (10%)"
+    },
+    {
+      "name": "Challenge Leverage",
+      "evaluationPhase1": "up to 1:50",
+      "fundedSTPAccount": "up to 1:50"
+    },
+    {
+      "name": "Consistency Rule",
+      "evaluationPhase1": "45%",
+      "fundedSTPAccount": "No"
+    },
+    {
+      "name": "Hold Over Weekend & News Trading",
+      "evaluationPhase1": "Hold over news with add-on",
+      "fundedSTPAccount": "Hold over news with add-on"
+    },
+    {
+      "name": "Price (Refundable Fee)",
+      "evaluationPhase1": "$249",
+      "fundedSTPAccount": "Refund"
+    }
+  ],
   "t1_25k": [
     {
       "name": "Profit Target",

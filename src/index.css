@@ -58,6 +58,9 @@ body:has(#mob_menu_open) {
 #table::-webkit-scrollbar {
   height: 4px;
 }
+.steps-scroller::-webkit-scrollbar {
+  height: 4px;
+}
 
 /* Markdown Styles */
 #markdown {
