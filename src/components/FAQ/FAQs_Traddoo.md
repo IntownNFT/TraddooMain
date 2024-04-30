@@ -842,11 +842,10 @@ cryptocurrency.*
 > {thisisquestion}How much profit do I get?
 >
 > The Funded Account allows you to receive an 80% profit split by
-> default (which can become 90% if you purchase the Add-On with your
-> Challenge). If you keep within the drawdown limits and are profitable,
+> default. If you keep within the drawdown limits and are profitable,
 > you will be eligible for your first payout as soon as your Funded
-> Account is \$100 in profit. You can request a payout every time your
-> Funded Account is in profit of at least \$100.
+> Account is \$50 in profit. You can request a payout every time your
+> Funded Account is in profit of at least \$50.
 >
 > {thisisquestion}What happens if I breach the drawdown limits or any other Funded Account requirement?
 >
@@ -863,9 +862,9 @@ cryptocurrency.*
 > hours). In order to be eligible for a payout:
 >
 > ● Your first payout request can be made as soon as your balance
-> exceeds \$100 in profits\
+> exceeds \$50 in profits\
 > ● Due to the current market state of crypto, we will only pay out if
-> your profit exceeds \$100. This will be calculated on equity gain made
+> your profit exceeds \$50. This will be calculated on equity gain made
 > from the previous payout\
 > ● Since Traddoo Funded Accounts are STP, your profits are made in the
 > real market (not simulated). This allows you to request payouts at
@@ -1057,7 +1056,7 @@ cryptocurrency.*
 >
 > With Traddoo you can trade a variety of instruments, from currencies
 > to crypto to commodities. The table below is a comprehensive list of
-> all instruments available.
+> all instruments available on MT5.
 >
 > Note: This list is effective as of 15/11/2023, and it may change
 > without notice. However, we will endeavor to communicate any changes
@@ -1335,7 +1334,7 @@ At Traddoo it is in our interest to offer our traders the tightest
 spreads and best trading conditions. Below is a table outlining the
 Contract Size, Minimum Step, and Commission for every instrument.
 Please reach out to our Support Team if you have any questions.
-Note: This list is effective as of 15/11/2023, and it may change
+Note: This list is effective as of 15/11/2023, for MT5, and it may change
 without notice. However, we will endeavor to communicate any changes
 promptly.
 Search:
@@ -1531,16 +1530,16 @@ Search:
 >
 > \$150,000 Challenge Offer:
 >
-> ● Price: \$749\
-> ● Refundable Fee: \$749\*
+> ● Price: \$819\
+> ● Refundable Fee: \$819\*
 >
 > Unlock the door to success in trading with our \$200,000 Funded
 > Account Challenge.
 >
 > \$200,000 Challenge Offer:
 >
-> ● Price: \$989\
-> ● Refundable Fee: \$989\*
+> ● Price: \$1099\
+> ● Refundable Fee: \$1099\*
 >
 > \* The fee is refunded upon successful completion of Phase 2.
 >
