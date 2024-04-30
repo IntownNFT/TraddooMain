@@ -4,55 +4,70 @@ import Card from "./Card";
 // import rules from "./rules.md"
 import { rules } from "./rules";
 
-const CompetitionsData = [
-  {
-    name: "April Competition",
-    contestants: "--",
-    description: "Challenge accounts",
-    isLive: true,
-    link: "https://prop.traddoo.com/competitions-overview",
-  },
-  {
-    name: "March Competition",
-    description: "Challenge accounts",
-    contestants: 756,
-    isLive: false,
-    link: "/",
-  },
-  {
-    name: "Feb Competition",
-    description: "Challenge accounts",
-    contestants: 923,
-    isLive: false,
-    link: "/",
-  },
-  {
-    name: "Jan Competition",
-    description: "Challenge accounts",
-    contestants: 1089,
-    isLive: false,
-    link: "/",
-  },
-  {
-    name: "Dec Competition",
-    description: "Challenge accounts",
-    contestants: 812,
-    isLive: false,
-    link: "/",
-  },
-  {
-    name: "Nov Competition",
-    description: "Challenge accounts",
-    contestants: 998,
-    isLive: false,
-    link: "/",
-  },
+interface CompetitionsDataItem {
+    name: string,
+    contestants: string,
+    description: string,
+    isLive: boolean,
+    link: string,
+}
+
+const CompetitionsData: CompetitionsDataItem[] = [
+  // {
+  //   name: "April Competition",
+  //   contestants: "--",
+  //   description: "Challenge accounts",
+  //   isLive: true,
+  //   link: "https://prop.traddoo.com/competitions-overview",
+  // },
+  // {
+  //   name: "March Competition",
+  //   description: "Challenge accounts",
+  //   contestants: 756,
+  //   isLive: false,
+  //   link: "/",
+  // },
+  // {
+  //   name: "Feb Competition",
+  //   description: "Challenge accounts",
+  //   contestants: 923,
+  //   isLive: false,
+  //   link: "/",
+  // },
+  // {
+  //   name: "Jan Competition",
+  //   description: "Challenge accounts",
+  //   contestants: 1089,
+  //   isLive: false,
+  //   link: "/",
+  // },
+  // {
+  //   name: "Dec Competition",
+  //   description: "Challenge accounts",
+  //   contestants: 812,
+  //   isLive: false,
+  //   link: "/",
+  // },
+  // {
+  //   name: "Nov Competition",
+  //   description: "Challenge accounts",
+  //   contestants: 998,
+  //   isLive: false,
+  //   link: "/",
+  // },
 ];
 
 const Grid = () => {
   return (
     <div className="flex justify-center items-center gap-4 flex-wrap mt-16">
-      {CompetitionsData.map((comp, index) => (
+      {
+        CompetitionsData.length === 0 && (
+          <p className="text-center text-[#717171] font-poppins font-medium text-lg">
+            No Competitions available at the moment.
+          </p>
+        )
+      }
+      {CompetitionsData.length > 0 && CompetitionsData.map((comp, index) => (
         <Card
           name={comp.name}
           description={comp.description}
