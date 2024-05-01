@@ -20,15 +20,15 @@
     },
     {
       "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$1,250 (5%)",
-      "verificationPhase2": "$1,250 (5%)",
-      "fundedSTPAccount": "$1,250 (5%)"
+      "evaluationPhase1": "$250 (5%)",
+      "verificationPhase2": "$250 (5%)",
+      "fundedSTPAccount": "$250 (5%)"
     },
     {
       "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$2,500 (10%)",
-      "verificationPhase2": "$2,500 (10%)",
-      "fundedSTPAccount": "$2,500 (10%)"
+      "evaluationPhase1": "$500 (10%)",
+      "verificationPhase2": "$500 (10%)",
+      "fundedSTPAccount": "$500 (10%)"
     },
     {
       "name": "Challenge Leverage",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$269",
+      "evaluationPhase1": "$89",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
     }
@@ -76,15 +76,15 @@
     },
     {
       "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$1,250 (5%)",
-      "verificationPhase2": "$1,250 (5%)",
-      "fundedSTPAccount": "$1,250 (5%)"
+      "evaluationPhase1": "$500 (5%)",
+      "verificationPhase2": "$500 (5%)",
+      "fundedSTPAccount": "$500 (5%)"
     },
     {
       "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$2,500 (10%)",
-      "verificationPhase2": "$2,500 (10%)",
-      "fundedSTPAccount": "$2,500 (10%)"
+      "evaluationPhase1": "$1000 (10%)",
+      "verificationPhase2": "$1000 (10%)",
+      "fundedSTPAccount": "$1000 (10%)"
     },
     {
       "name": "Challenge Leverage",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$269",
+      "evaluationPhase1": "$149",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
     }

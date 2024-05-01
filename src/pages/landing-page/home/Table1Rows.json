@@ -12,18 +12,18 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$1,000 (4%)",
-      "fundedSTPAccount": "$1,250 (5%)"
+      "evaluationPhase1": "$200 (4%)",
+      "fundedSTPAccount": "$250 (5%)"
     },
     {
       "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$1,750 (7%)",
-      "fundedSTPAccount": "$2,500 (10%)"
+      "evaluationPhase1": "$350 (7%)",
+      "fundedSTPAccount": "$500 (10%)"
     },
     {
       "name": "Challenge Leverage",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$249",
+      "evaluationPhase1": "$79",
       "fundedSTPAccount": "Refund"
     }
   ],
@@ -59,18 +59,18 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$1,000 (4%)",
-      "fundedSTPAccount": "$1,250 (5%)"
+      "evaluationPhase1": "$400 (4%)",
+      "fundedSTPAccount": "$500 (5%)"
     },
     {
       "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$1,750 (7%)",
-      "fundedSTPAccount": "$2,500 (10%)"
+      "evaluationPhase1": "$700 (7%)",
+      "fundedSTPAccount": "$1000 (10%)"
     },
     {
       "name": "Challenge Leverage",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$249",
+      "evaluationPhase1": "$139",
       "fundedSTPAccount": "Refund"
     }
   ],
@@ -106,8 +106,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -153,8 +153,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -200,8 +200,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -247,8 +247,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
@@ -294,8 +294,8 @@
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "5",
-      "fundedSTPAccount": "-"
+      "evaluationPhase1": "1",
+      "fundedSTPAccount": "1"
     },
     {
       "name": "Max Daily Drawdown",
