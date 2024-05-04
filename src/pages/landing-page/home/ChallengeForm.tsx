@@ -31,18 +31,24 @@ const FormContent = () => {
     }
     switch (activeSize) {
       case 0:
-        setSize("25k");
+        setSize("5k");
         break;
       case 1:
-        setSize("50k");
+        setSize("10k");
         break;
       case 2:
-        setSize("100k");
+        setSize("25k");
         break;
       case 3:
-        setSize("150k");
+        setSize("50k");
         break;
       case 4:
+        setSize("100k");
+        break;
+      case 5:
+        setSize("150k");
+        break;
+      case 6:
         setSize("200k");
         break;
     }
@@ -73,14 +79,18 @@ const FormFooter = ({ newPrice }: { newPrice?: string }) => {
   const selectAcc = () => {
     switch (activeSize) {
       case 0:
-        return "$25K";
+        return "$5K";
       case 1:
-        return "$50K";
+        return "$10K";
       case 2:
-        return "$100K";
+        return "$25K";
       case 3:
-        return "$150K";
+        return "$50K";
       case 4:
+        return "$100K";
+      case 5:
+        return "$150K";
+      case 6:
         return "$200K";
     }
   }
