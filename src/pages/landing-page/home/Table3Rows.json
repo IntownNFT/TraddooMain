@@ -218,7 +218,7 @@
     },
     {
       "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$269",
+      "evaluationPhase1": "$379",
       "verificationPhase2": "Free",
       "fundedSTPAccount": "Refund"
     }
