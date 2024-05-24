@@ -340,7 +340,7 @@ export const FAQsData = [
   {
     Question: "Who can Reset their Challenges?",
     Answer:
-      "If you have a Day Trading or Swing Challenge, you can reset it only during Phase 1. Single Phase Challenges can also be reset.",
+      "If you have a Day Trading or Swing Challenge, you can reset it only during Phase 1.",
   },
   {
     Question: "How does the reset help?",
