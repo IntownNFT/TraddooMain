@@ -345,7 +345,7 @@ export const FAQsData = [
   {
     Question: "How does the reset help?",
     Answer:
-      'It\'s not a good feeling to fail, our reset function allows you to adapt your trading plan and strategy and try again for 20% less than the original cost. You can reset your account by following the simple steps below: 1. Access your funded 2. Navigate to the challenge you wish to reset. 3. Simply click "Reset Challenge" and you\'re ready to go again. Once you have successfully reset your challenge you will see a pop-up window highlighting your discounted price (20% Less) and the available payment options. Now all you have to do is confirm or cancel. Click "Cancel" if you do not wish to continue or "Reset & Keep Trading" to keep going. If you have failed your Challenge, you can retry it from your Dashboard within 24 hours for a 15% discount',
+      'It\'s not a good feeling to fail, our reset function allows you to adapt your trading plan and strategy and try again for 30% less than the original cost. You can reset your account by following the simple steps below: 1. Access your funded 2. Navigate to the challenge you wish to reset. 3. Simply click "Reset Challenge" and you\'re ready to go again. Once you have successfully reset your challenge you will see a pop-up window highlighting your discounted price (30% Less) and the available payment options. Now all you have to do is confirm or cancel. Click "Cancel" if you do not wish to continue or "Reset & Keep Trading" to keep going. If you have failed your Challenge, you can retry it from your Dashboard within 24 hours for a 15% discount',
   },
   {
     Question: "How To Calculate Profits from a Trade",
@@ -965,7 +965,7 @@ export const FAQsData = [
     ),
   },
   {
-    Question: "What Is Traddoo's Funded Account Challenge Offer?",
+    Question: "What Does Traddoo's Funded Account Challenge Offer?",
     Answer:
       "At Traddoo, we provide a variety of account sizes and prices to accommodate traders of different backgrounds, ensuring an accessible platform for all. Funded Challenge Offer: Start a profitable career with our $25,000 Funded Account Challenge $25,000 Challenge Offer: - Price: $249 - Refundable Fee: $249* Grow your skills as a trader without risking your capital with our $50,000 Funded Account Challenge. $50,000 Challenge Offer: - Price: $349 - Refundable Fee: $349* Show off your pro trading tactics and get funded with our $100,000 Funded Account Challenge. $100,00 Challenge Offer: - Price: $549 - Refundable Fee: $549* Size this opportunity to advance your trading career with our $150,000 Funded Account Challenge. $150,000 Challenge Offer: - Price: $819 - Refundable Fee: $819* Unlock the door to success in trading with our $200,000 Funded Account Challenge. $200,000 Challenge Offer: - Price: $1099 - Refundable Fee: $1099* * The fee is refunded upon successful completion of Phase 2. Join us today and seize the chance to amplify your trading potential. Discover the perfect match among our diverse Funded Account Challenges and chart your course toward financial success and trading excellence.",
   },
