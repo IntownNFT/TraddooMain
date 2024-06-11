@@ -129,7 +129,7 @@ export const FAQsData = [
   {
     Question: "How Do I Purchase a Challenge?",
     Answer:
-      "Once you have completed the sign-up and have had a chance to look around the dashboard, now it's time to purchase your challenge. With clear product detail, clever coupon functionality, and a mobile-optimized interface our checkout is as much about speed as it is simplicity. To buy your challenge simply log into your dashboard, choose the product you wish to purchase ($5k, $10k, $25k, $50k, $100k, or $200k), then choose your platform and follow these easy steps: Review your order to make sure you have chosen the account that suits you. Enter the country you are purchasing from. Select your payment method. We currently offer card payments as well as crypto, such as Litecoin (LTC), Bitcoin (BTC), Dogecoin (DOGE), Ethereum (ETH - ERC20), Tether (USDT - ERC20) and USD Coin (USDC - ERC20). If you are lucky enough to have a coupon (keep your eyes peeled, we are generous 😉) please provide your code in the field and hit 'apply'. Click 'proceed to payment' and follow the instructions for card payments or scan the QR provided for crypto payments (alternatively, you can manually copy the crypto address to send funds from your wallet). Once your payment has been completed and confirmed, you will receive your credentials via email. You are now ready to join the family. In order to use ETH (ERC-20), USDT (ERC-20), or USDC (ERC-20) you will need to use the ERC-20 standard.",
+      "Once you have completed the sign-up and have had a chance to look around the dashboard, now it's time to purchase your challenge. With clear product detail, clever coupon functionality, and a mobile-optimized interface our checkout is as much about speed as it is simplicity. To buy your challenge simply log into your dashboard, choose the product you wish to purchase ($5k, $10k, $25k, $50k, $100k, $150k, or $200k), then choose your platform and follow these easy steps: Review your order to make sure you have chosen the account that suits you. Enter the country you are purchasing from. Select your payment method. We currently offer card payments as well as crypto, such as Litecoin (LTC), Bitcoin (BTC), Dogecoin (DOGE), Ethereum (ETH - ERC20), Tether (USDT - ERC20) and USD Coin (USDC - ERC20). If you are lucky enough to have a coupon (keep your eyes peeled, we are generous 😉) please provide your code in the field and hit 'apply'. Click 'proceed to payment' and follow the instructions for card payments or scan the QR provided for crypto payments (alternatively, you can manually copy the crypto address to send funds from your wallet). Once your payment has been completed and confirmed, you will receive your credentials via email. You are now ready to join the family. In order to use ETH (ERC-20), USDT (ERC-20), or USDC (ERC-20) you will need to use the ERC-20 standard.",
   },
   {
     Question: "Is the fee refundable?",
@@ -188,7 +188,7 @@ export const FAQsData = [
   {
     Question: "How To Join?",
     Answer:
-      "Becoming an Affiliate is simple. Sign up or log into your existing account and follow the steps: Navigate to the 'Affiliates' tab from within your trader's portal. Now you'll see your referral dashboard. This includes your Affiliate ID, an overview of commissions & referrals, campaigns, your BTC address, and your unique link. Copy your link and spread the good word. How It Works As a Traddoo Affiliate, you can earn 10% for every referral that signs up and purchases a challenge account with your unique referral link. Payouts occur weekly, every Friday. However, it's important to note that you are required to accumulate a minimum of $100 if you are to qualify for payouts. The payouts will be done in cryptocurrency.",
+      "Becoming an Affiliate is simple. Sign up or log into your existing account and follow the steps: Navigate to the 'Affiliates' tab from within your trader's portal. Now you'll see your referral dashboard. This includes your Affiliate ID, an overview of commissions & referrals, campaigns, your USDT ERC20 address, and your unique link. Copy your link and spread the good word. How It Works As a Traddoo Affiliate, you can earn 10% for every referral that signs up and purchases a challenge account with your unique referral link. Payouts occur weekly, every Friday. However, it's important to note that you are required to accumulate a minimum of $100 if you are to qualify for payouts. The payouts will be done in cryptocurrency.",
   },
   {
     Question: "How Quick Can I Start?",
@@ -391,7 +391,7 @@ export const FAQsData = [
   {
     Question: "What are the payout methods available?",
     Answer:
-      "You can withdraw your profits in USDT ERC20 directly into your wallet. Once you have requested your payout, we will review the request and aim to process it as soon as possible (on average it takes less than 8 hours). Payouts will ONLY be accredited to traders who have fully verified accounts and who have not breached any of the Funded Account requirements. You can easily update your payment details at any time from your Dashboard, and you'll receive a confirmation email as an extra measure of security. Get Paid in Fiat or Crypto With Rise We have connected with Rise to enable fiat payments to your local bank account and a variety of other crypto currencies. To benefit from Rise payouts you need to onboard with them: 1. Request onboarding with Rise via email at stating your first and last name 2. We'll send you an invite to onboard with Rise: follow the instructions and get registered 3. Upon requesting a payout, funds will be transferred to your Rise wallet in USD 4. Conveniently withdraw your USD to your bank account or opt for other currencies with a minimal conversion fee How to Make Rise Payout Requests 1. Go to your Traddoo dashboard 2. Select the 'Payout via Rise' option 3. Enter your registered Rise email 4. We'll take care of the rest! Rise Fee Structure Rise ensures that withdrawals in major currencies like USD, EUR, and GBP are free of charge. A small conversion fee is applicable for other currencies.",
+      "You can withdraw your profits in USDT ERC20 directly into your wallet. Once you have requested your payout, we will review the request and aim to process it as soon as possible (on average it takes less than 8 hours). Payouts will ONLY be accredited to traders who have fully verified accounts and who have not breached any of the Funded Account requirements. You can easily update your payment details at any time from your Dashboard, and you'll receive a confirmation email as an extra measure of security.",
   },
   {
     Question: "Can I Scale My Account?",
@@ -401,7 +401,7 @@ export const FAQsData = [
   {
     Question: "Why our Scaling Plan is the best on the market?",
     Answer:
-      "A very generous 50% increase in account balance every 3 months, all the way up to $5 million Fair and safe profit eligibility requirement (10% consecutively for 3 months) Trading goals remain the same Profit split of 80/20 in your favor (or 90/10 with the add-on)",
+      "A very generous 50% increase in account balance every 3 months, all the way up to $5 million Fair and safe profit eligibility requirement (10% consecutively for 3 months) Trading goals remain the same Profit split of 80/20 in your favor",
   },
   {
     Question: "What are the requirements?",
@@ -469,11 +469,6 @@ export const FAQsData = [
     Question: "How Can I Reset My Funded Account Challenge Trading Password",
     Answer:
       'How to reset your Funded Account Challenge\'s trading password: 1. Log into your Funded Account Challenge Dashboard. 2. Tap on the 3 horizontal lines at the top of the Dashboard, and select the challenge account which you want to effect. 3. At the top of the screen, you will see the "Credentials" button. 4. When tapping on the Credentials button, you will see some information relevant to your credentials and platform. 5. Within this tab, select "Reset Password" 6. You will see a confirmation pop-up, after which you will receive your new credentials at your registered email address. Please note that in order to follow the above steps, you will need to have an active challenge.',
-  },
-  {
-    Question: "Can I Change Trading Platforms After Making a Purchase?",
-    Answer:
-      "If you've purchased a challenge and wish to switch to a different platform, please note that this change can only be made if you haven't initiated the challenge. Once you've started trading on your challenge account, changing platforms won't be possible. If you have purchased a challenge using a coupon, and have not started the challenge, you may only change to a different platform if the coupon is valid on different platforms. If you have already started the challenge, you will not be able to change to a different platform. To request a platform change, and you have not started the challenge, kindly reach out to our customer support team accessible by clicking on the chat bubble located at the bottom left of your screen. Our customer support team is at your service 24/7.",
   },
   {
     Question: "What Trading Platforms are available on Traddoo?",
@@ -972,7 +967,7 @@ export const FAQsData = [
   {
     Question: "TYPES OF FUNDED ACCOUNT CHALLENGE",
     Answer:
-      "Traddoo Funded Challenge Types Overview Traddoo offers three Challenge types, specifically designed to suit different trading strategies and styles. All Traddoo Funded Account Challenges have these features in common: - Daily payouts once you get funded - EAs are not allowed - Up to 80/20 profit split - Unlimited time to pass the Challenge - Scale your Funded Account to $5 million The three Challenge types we offer are: - Click on each Account type to find out more details about them, or head to our homepage to find a the comparison table",
+      "Traddoo Funded Challenge Types Overview Traddoo offers three Challenge types, specifically designed to suit different trading strategies and styles. All Traddoo Funded Account Challenges have these features in common: - Daily payouts once you get funded - EAs are allowed - Up to 80/20 profit split - Unlimited time to pass the Challenge - Scale your Funded Account to $5 million The three Challenge types we offer are: - Click on each Account type to find out more details about them, or head to our homepage to find a the comparison table",
   },
   {
     Question: "What Is the Traddoo Single Phase Trading Challenge?",
