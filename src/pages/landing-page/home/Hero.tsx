@@ -70,15 +70,15 @@ const Stat = ({
 const stats = [
   {
     title: "Total Traders",
-    stat: "6970",
+    stat: "8060+",
   },
   {
     title: "Total Funded",
-    stat: "38",
+    stat: "240+",
   },
   {
     title: "Total Payouts",
-    stat: "$213,445",
+    stat: "$247,660",
   },
 ];
 
