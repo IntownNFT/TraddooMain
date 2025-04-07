@@ -6,22 +6,11 @@ import MenuLink from "./MenuLink";
 
 const links = [
   {
-    page: "Competition",
-    path: "/competition",
-  },
-  // {
-  //   page: "Rewards",
-  //   path: "/rewards",
-  // },
-  {
     page: "Rules",
     path: "/rules",
   },
-  {
-    page: "Contact",
-    path: "/contact",
-  },
 ];
+
 const LinkWrapper = () => {
   return (
     <div className="hidden md:flex items-center gap-6 text-base">
@@ -35,7 +24,6 @@ const LinkWrapper = () => {
     </div>
   );
 };
-
 
 const LogoLink = () => {
   return (

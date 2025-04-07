@@ -14,56 +14,52 @@ const FormContent = () => {
   };
   const { activeType, activeSize } = contextValue;
 
-  const [plan, setPlan] = useState("");
-  const [size, setSize] = useState("");
+  const [splitType, setSplitType] = useState("");
+  const [accountSize, setAccountSize] = useState("");
 
   useEffect(() => {
     switch (activeType) {
       case 0:
-        setPlan("Regular (1-Step)");
+        setSplitType("80% Premium");
         break;
       case 1:
-        setPlan("Regular (2-Step)");
-        break;
-      case 2:
-        setPlan("Swing (2-Step)");
+        setSplitType("55% Standard");
         break;
     }
     switch (activeSize) {
       case 0:
-        setSize("5k");
+        setAccountSize("$100K");
         break;
       case 1:
-        setSize("10k");
-        break;
-      case 2:
-        setSize("25k");
-        break;
-      case 3:
-        setSize("50k");
-        break;
-      case 4:
-        setSize("100k");
-        break;
-      case 5:
-        setSize("150k");
-        break;
-      case 6:
-        setSize("200k");
+        setAccountSize("$200K");
         break;
     }
   }, [activeSize, activeType]);
 
   return (
     <div className="mt-4 font-rubik font-semibold">
-      <h2 className="mb-4 text-2xl">
-        {plan} {size}
+      <h2 className="mb-6 text-2xl">
+        {accountSize} with {splitType} Split
       </h2>
-      <p className="font-normal text-[#93A1A6]">
-        The Challenge is your initial dive into the becoming an Traddoo Trader.
-        Prove your trading skills, hit the profit target, maintain discipline,
-        and showcase responsible risk management.
-      </p>
+      
+      <div className="space-y-3 text-[#93A1A6]">
+        <div className="flex items-start">
+          <span className="text-blue mr-2 mt-1">•</span>
+          <span>
+            {activeSize === 0 ? "$2,000" : "$3,000"} profit target with {activeSize === 0 ? "$800" : "$1,000"} max drawdown
+          </span>
+        </div>
+        <div className="flex items-start">
+          <span className="text-blue mr-2 mt-1">•</span>
+          <span>
+            Start with {activeSize === 0 ? "5 micros" : "10 micros or 1 mini"} contract{activeSize === 0 ? "s" : ""}
+          </span>
+        </div>
+        <div className="flex items-start">
+          <span className="text-blue mr-2 mt-1">•</span>
+          <span>No consistency rules once funded, no monthly fees</span>
+        </div>
+      </div>
     </div>
   );
 };
@@ -74,26 +70,25 @@ const FormFooter = ({ newPrice }: { newPrice?: string }) => {
     activeSize: 0,
     price: "",
   };
-  const { activeSize, price } = contextValue;
+  const { activeType, activeSize, price } = contextValue;
 
-  const selectAcc = () => {
-    switch (activeSize) {
-      case 0:
-        return "$5K";
-      case 1:
-        return "$10K";
-      case 2:
-        return "$25K";
-      case 3:
-        return "$50K";
-      case 4:
-        return "$100K";
-      case 5:
-        return "$150K";
-      case 6:
-        return "$200K";
+  // Define prices based on type and size
+  const getPriceValue = () => {
+    if (activeType === 0) { // 80% Premium
+      return activeSize === 0 ? "$149/month" : "$249/month";
+    } else { // 55% Standard
+      return activeSize === 0 ? "$99/month" : "$149/month";
     }
-  }
+  };
+
+  // Define original prices (for strikethrough)
+  const getOriginalPrice = () => {
+    if (activeType === 0) { // 80% Premium
+      return activeSize === 0 ? "$249" : "$349";
+    } else { // 55% Standard
+      return activeSize === 0 ? "$199" : "$249";
+    }
+  };
 
   return (
     <div className="flex items-center gap-5 flex-wrap-reverse">
@@ -106,13 +101,15 @@ const FormFooter = ({ newPrice }: { newPrice?: string }) => {
       <div>
         <h3 className="font-rubik text-2xl">
           <span className="font-medium line-through text-[#93A1A6]">
-            {"$" + (Number(price.slice(1)) + 100)}
+            {getOriginalPrice()}
           </span>
           <span className="font-normal ml-2">
-            {newPrice ? newPrice : price}
+            {newPrice ? newPrice : getPriceValue()}
           </span>
         </h3>
-        <p className="font-rubik text-[#93A1A6] text-xs">For {selectAcc()} Account</p>
+        <p className="font-rubik text-[#93A1A6] text-xs">
+          For {activeSize === 0 ? "$100K" : "$200K"} Account
+        </p>
       </div>
     </div>
   );

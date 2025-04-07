@@ -1,7 +1,7 @@
 type RowDataItem = {
   name: string;
   evaluationPhase1: string;
-    verificationPhase2?: string;
+  verificationPhase2?: string;
   fundedSTPAccount: string;
 };
 

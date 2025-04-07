@@ -1,84 +1,74 @@
-import { Stepper, Step } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 interface StepProps {
   activeStep: number;
   setActiveStep: (activeStep: number) => void;
   steps: Array<{ title: string; isPopular?: boolean }>;
 }
-const Steps = ({ activeStep, setActiveStep, steps }: StepProps) => {
-  const activeClassNames = "bg-dark-grey border-2 border-blue";
-  const completedClassNames = "bg-blue";
 
+const Steps = ({ activeStep, setActiveStep, steps }: StepProps) => {
   return (
-    <Stepper
-      placeholder={""}
-      activeStep={activeStep}
-      lineClassName="bg-light-grey h-[1px]"
-      activeLineClassName="bg-light-grey"
-      className="h-16 ml-5 mb-10"
-    >
+    <div className="flex gap-4">
       {steps.map((step, index) => (
-        <Step
-          placeholder={""}
-          className="w-5 h-5 bg-blue cursor-pointer relative"
-          activeClassName={activeClassNames}
-          completedClassName={completedClassNames}
-          onClick={() => setActiveStep(index)}
-          key={index}
-        >
-          <div className="absolute w-max -bottom-2 -left-5 translate-y-full flex flex-col font-rubik font-medium">
-            <h4 className="text-base sm:text-xl text-white !break-all max-w-[60px] sm:max-w-max">{step.title}</h4>
-            {step.isPopular && (
-              <span className="text-xs text-blue text-center">
-                Most Popular
-              </span>
-            )}
-          </div>
-        </Step>
+        <div key={index} className="relative">
+          <Button
+            placeholder={""}
+            className={`font-rubik font-medium text-base sm:text-xl normal-case px-6 py-3 ${
+              activeStep === index 
+                ? "bg-blue" 
+                : "bg-dark-grey border-2 border-light-grey hover:border-blue"
+            }`}
+            onClick={() => setActiveStep(index)}
+          >
+            {step.title}
+          </Button>
+          {step.isPopular && (
+            <span className="absolute -top-2 -right-2 text-xs text-blue bg-dark-grey px-2 py-1 rounded-full border border-blue">
+              Popular
+            </span>
+          )}
+        </div>
       ))}
-    </Stepper>
+    </div>
   );
 };
 
 interface StepperProps {
-    activeType:  number;
-    setActiveType:  (activeStep: number) => void;
-    activeSize:  number;
-    setActiveSize:  (activeStep: number) => void;
+  activeType: number;
+  setActiveType: (activeStep: number) => void;
+  activeSize: number;
+  setActiveSize: (activeStep: number) => void;
 }
-const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}: StepperProps) => {
 
+const StepperContainer = ({activeType, setActiveType, activeSize, setActiveSize}: StepperProps) => {
   const type_steps = [
     {
-      title: "1-Step",
-      isPopular: false,
+      title: "80%",
+      isPopular: true,
     },
-    { title: "2-Step", isPopular: true },
-    { title: "2-Step (Swing)", isPopular: false },
+    { 
+      title: "55%", 
+      isPopular: false 
+    }
   ];
 
   const size_steps = [
-    { title: "$5k", isPopular: false },
-    { title: "$10k", isPopular: false },
-    { title: "$25k", isPopular: false },
-    { title: "$50k", isPopular: false },
     { title: "$100k", isPopular: true },
-    { title: "$150k", isPopular: false },
-    { title: "$200k", isPopular: false },
+    { title: "$200k", isPopular: false }
   ];
 
   return (
     <div className="steps-scroller font-rubik font-medium text-3xl sm:w-3/4 w-full mb-2 overflow-x-auto sm:overflow-x-visible">
-      <h3 className="mb-0">Type:</h3>
-      <div className="w-full md:w-2/3 lg:w-1/3">
+      <h3 className="mb-4">Split:</h3>
+      <div className="mb-8">
         <Steps
           activeStep={activeType}
           setActiveStep={setActiveType}
           steps={type_steps}
         />
       </div>
-      <h3 className="mt-6 mb-0">Size:</h3>
-      <div className="w-96 sm:w-full max-w-[800px]">
+      <h3 className="mb-4">Account Size:</h3>
+      <div>
         <Steps
           activeStep={activeSize}
           setActiveStep={setActiveSize}

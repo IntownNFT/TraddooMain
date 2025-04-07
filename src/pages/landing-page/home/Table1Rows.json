@@ -1,331 +1,222 @@
 {
-  "t1_5k": [
-    {
-      "name": "Profit Target",
-      "evaluationPhase1": "14%",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
-    },
-    {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$200 (4%)",
-      "fundedSTPAccount": "$250 (5%)"
-    },
-    {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$350 (7%)",
-      "fundedSTPAccount": "$500 (10%)"
-    },
-    {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$79",
-      "fundedSTPAccount": "Refund"
-    }
-  ],
-  "t1_10k": [
-    {
-      "name": "Profit Target",
-      "evaluationPhase1": "14%",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
-    },
-    {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$400 (4%)",
-      "fundedSTPAccount": "$500 (5%)"
-    },
-    {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$700 (7%)",
-      "fundedSTPAccount": "$1000 (10%)"
-    },
-    {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$139",
-      "fundedSTPAccount": "Refund"
-    }
-  ],
   "t1_25k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "14%",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
+      "evaluationPhase1": "$500",
       "fundedSTPAccount": "-"
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
+      "evaluationPhase1": "3",
+      "fundedSTPAccount": "No minimum"
     },
     {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$1,000 (4%)",
-      "fundedSTPAccount": "$1,250 (5%)"
+      "name": "EOD Drawdown",
+      "evaluationPhase1": "$200 (Locks at starting balance)",
+      "fundedSTPAccount": "$200 (Locks at starting balance)"
     },
     {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$1,750 (7%)",
-      "fundedSTPAccount": "$2,500 (10%)"
+      "name": "Max Position Size",
+      "evaluationPhase1": "2 Micros",
+      "fundedSTPAccount": "15 Contracts (Scaling)"
     },
     {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
+      "name": "40% Rule",
+      "evaluationPhase1": "Yes",
       "fundedSTPAccount": "No"
     },
     {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
+      "name": "Trading Hours",
+      "evaluationPhase1": "9:30am - 4pm EST",
+      "fundedSTPAccount": "9:30am - 4pm EST"
     },
     {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$249",
-      "fundedSTPAccount": "Refund"
+      "name": "Profit Split",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "80%"
+    },
+    {
+      "name": "Price (Monthly)",
+      "evaluationPhase1": "$54",
+      "fundedSTPAccount": "Free"
     }
   ],
   "t1_50k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "14%",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
+      "evaluationPhase1": "$1,000",
       "fundedSTPAccount": "-"
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
+      "evaluationPhase1": "3",
+      "fundedSTPAccount": "No minimum"
     },
     {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$2,000 (4%)",
-      "fundedSTPAccount": "$2,500 (5%)"
+      "name": "EOD Drawdown",
+      "evaluationPhase1": "$400 (Locks at starting balance)",
+      "fundedSTPAccount": "$400 (Locks at starting balance)"
     },
     {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$3,500 (7%)",
-      "fundedSTPAccount": "$5,000 (10%)"
+      "name": "Max Position Size",
+      "evaluationPhase1": "4 Micros",
+      "fundedSTPAccount": "15 Contracts (Scaling)"
     },
     {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
+      "name": "40% Rule",
+      "evaluationPhase1": "Yes",
       "fundedSTPAccount": "No"
     },
     {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
+      "name": "Trading Hours",
+      "evaluationPhase1": "9:30am - 4pm EST",
+      "fundedSTPAccount": "9:30am - 4pm EST"
     },
     {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$349",
-      "fundedSTPAccount": "Refund"
+      "name": "Profit Split",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "80%"
+    },
+    {
+      "name": "Price (Monthly)",
+      "evaluationPhase1": "$79",
+      "fundedSTPAccount": "Free"
     }
   ],
   "t1_100k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "14%",
+      "evaluationPhase1": "$2,000",
       "fundedSTPAccount": "-"
     },
     {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "-"
+      "name": "EOD Drawdown",
+      "evaluationPhase1": "$800 (Locks at +$200)",
+      "fundedSTPAccount": "$800 (Locks at +$200)"
+    },
+    {
+      "name": "Max Position Size",
+      "evaluationPhase1": "5 Micros",
+      "fundedSTPAccount": "15 Minis (Scaling)"
+    },
+    {
+      "name": "40% Rule",
+      "evaluationPhase1": "Yes",
+      "fundedSTPAccount": "No"
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
+      "evaluationPhase1": "3",
+      "fundedSTPAccount": "No minimum"
     },
     {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$4,000 (4%)",
-      "fundedSTPAccount": "$5,000 (5%)"
+      "name": "Withdrawal Eligibility",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "1% profit target, no caps"
     },
     {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$7,000 (7%)",
-      "fundedSTPAccount": "$10,000 (10%)"
+      "name": "Scaling",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "1 mini per 1% increase"
     },
     {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
+      "name": "Profit Split",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "80% Premium"
     },
     {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$549",
-      "fundedSTPAccount": "Refund"
+      "name": "Price",
+      "evaluationPhase1": "$149/month",
+      "fundedSTPAccount": "No monthly fees"
     }
   ],
   "t1_150k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "14%",
-      "fundedSTPAccount": "-"
-    },
-    {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
+      "evaluationPhase1": "$2,500",
       "fundedSTPAccount": "-"
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
+      "evaluationPhase1": "3",
+      "fundedSTPAccount": "No minimum"
     },
     {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$6,000 (4%)",
-      "fundedSTPAccount": "$7,500 (5%)"
+      "name": "EOD Drawdown",
+      "evaluationPhase1": "$900 (Locks at starting balance)",
+      "fundedSTPAccount": "$900 (Locks at starting balance)"
     },
     {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$10,500 (7%)",
-      "fundedSTPAccount": "$15,000 (10%)"
+      "name": "Max Position Size",
+      "evaluationPhase1": "8 Micros",
+      "fundedSTPAccount": "15 Contracts (Scaling)"
     },
     {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
-    },
-    {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
+      "name": "40% Rule",
+      "evaluationPhase1": "Yes",
       "fundedSTPAccount": "No"
     },
     {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
+      "name": "Trading Hours",
+      "evaluationPhase1": "9:30am - 4pm EST",
+      "fundedSTPAccount": "9:30am - 4pm EST"
     },
     {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$819",
-      "fundedSTPAccount": "Refund"
+      "name": "Profit Split",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "80%"
+    },
+    {
+      "name": "Price (Monthly)",
+      "evaluationPhase1": "$139",
+      "fundedSTPAccount": "Free"
     }
   ],
   "t1_200k": [
     {
       "name": "Profit Target",
-      "evaluationPhase1": "14%",
+      "evaluationPhase1": "$3,000",
       "fundedSTPAccount": "-"
     },
     {
-      "name": "Challenge Duration",
-      "evaluationPhase1": "Unlimited",
-      "fundedSTPAccount": "-"
+      "name": "EOD Drawdown",
+      "evaluationPhase1": "$1,000 (Locks at +$200)",
+      "fundedSTPAccount": "$1,000 (Locks at +$200)"
+    },
+    {
+      "name": "Max Position Size",
+      "evaluationPhase1": "10 Micros or 1 Mini",
+      "fundedSTPAccount": "15 Minis (Scaling)"
+    },
+    {
+      "name": "40% Rule",
+      "evaluationPhase1": "Yes",
+      "fundedSTPAccount": "No"
     },
     {
       "name": "Minimum Trading Days",
-      "evaluationPhase1": "1",
-      "fundedSTPAccount": "1"
+      "evaluationPhase1": "3",
+      "fundedSTPAccount": "No minimum"
     },
     {
-      "name": "Max Daily Drawdown",
-      "evaluationPhase1": "$8,000 (4%)",
-      "fundedSTPAccount": "$10,000 (5%)"
+      "name": "Withdrawal Eligibility",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "1% profit target, no caps"
     },
     {
-      "name": "Max Overall Drawdown",
-      "evaluationPhase1": "$14,000 (7%)",
-      "fundedSTPAccount": "$20,000 (10%)"
+      "name": "Scaling",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "1 mini per 1% increase"
     },
     {
-      "name": "Challenge Leverage",
-      "evaluationPhase1": "up to 1:50",
-      "fundedSTPAccount": "up to 1:50"
+      "name": "Profit Split",
+      "evaluationPhase1": "-",
+      "fundedSTPAccount": "80% Premium"
     },
     {
-      "name": "Consistency Rule",
-      "evaluationPhase1": "45%",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Hold Over Weekend & News Trading",
-      "evaluationPhase1": "No",
-      "fundedSTPAccount": "No"
-    },
-    {
-      "name": "Price (Refundable Fee)",
-      "evaluationPhase1": "$1099",
-      "fundedSTPAccount": "Refund"
+      "name": "Price",
+      "evaluationPhase1": "$249/month",
+      "fundedSTPAccount": "No monthly fees"
     }
   ]
 }

@@ -1,31 +1,38 @@
-import Logo1 from "../../../assets/landing-page/partners/tradelocker.webp";
-import Logo3 from "../../../assets/landing-page/partners/funderpro.webp";
-import Logo4 from "../../../assets/landing-page/partners/redacre.webp";
-import Logo5 from "../../../assets/landing-page/partners/propfirm.webp";
-import Logo6 from "../../../assets/landing-page/partners/cryptochill.webp";
-import Logo7 from "../../../assets/landing-page/partners/fundedraffle.webp"
+import QtLogo from "../../../assets/landing-page/partners/qtLogoBottom.svg";
+import DxFeed from "../../../assets/landing-page/partners/logo-dxFeed-white.a620287d.svg";
+import Volumetrica from "../../../assets/landing-page/partners/volumetrica_c3b73e53cf.svg";
+import LogoHeader from "../../../assets/landing-page/partners/logoHeader-C_MbcQLk.svg";
 
 import { useEffect, useRef } from "react";
 
-const logos = [Logo1, Logo3, Logo4, Logo5, Logo6, Logo7];
+const logos = [QtLogo, DxFeed, Volumetrica, LogoHeader];
 
 const Partners = () => {
   const logosRef = useRef<HTMLUListElement>(null);
 
   useEffect(() => {
+    // Clear any existing duplicated lists first
+    const parent = logosRef.current?.parentElement;
+    if (parent) {
+      const children = Array.from(parent.children);
+      for (let i = 1; i < children.length; i++) {
+        parent.removeChild(children[i]);
+      }
+    }
+
+    // Then create a fresh duplicate
     const insertLogosAfterEnd = () => {
       const ul = logosRef.current;
       if (ul) {
-        ul.insertAdjacentHTML("afterend", ul.outerHTML);
-        const nextSibling = ul.nextSibling as HTMLElement | null;
-        if (nextSibling) {
-          nextSibling.setAttribute("aria-hidden", "true");
-        }
+        const clone = ul.cloneNode(true) as HTMLElement;
+        clone.setAttribute("aria-hidden", "true");
+        ul.parentElement?.appendChild(clone);
       }
     };
 
     insertLogosAfterEnd();
   }, []);
+
   return (
     <div>
       <h2 className="font-raleway font-bold text-center text-5xl">
@@ -37,16 +44,18 @@ const Partners = () => {
       <div className="w-full inline-flex py-6 flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <ul
           ref={logosRef}
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+          className="flex items-center justify-center md:justify-start [&_li]:mx-24 [&_img]:max-w-none animate-infinite-scroll"
         >
           {logos.map((logo, index) => (
-            <li key={index}>
+            <li key={index} className={index === 0 || index === logos.length - 1 ? 'mx-36' : ''}>
               <img
                 src={logo}
                 alt="partner"
-                width={143}
-                height={114}
-                className="rounded-[20px]"
+                width={400}
+                height={350}
+                className={`rounded-[20px] object-contain ${
+                  logo === LogoHeader ? 'w-[150px] h-[130px]' : ''
+                }`}
               />
             </li>
           ))}

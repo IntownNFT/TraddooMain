@@ -24,12 +24,17 @@ const CookiePolicy = () => {
     <main className="mt-16">
       <SectionHeader
         title="Cookie Policy"
-        subtitle="Any question or remarks? Just write us a message!"
-        subtitleStyles="font-poppins font-medium !text-[#717171] mt-3"
+        subtitle="Learn about how we use cookies and tracking technology"
+        subtitleStyles="font-poppins font-medium text-[#717171] mt-3"
       />
-      <article className="mt-20 font-poppins bg-dark-grey border border-light-grey rounded-lg py-12 px-5 md:px-16" id="markdown">
-        <Markdown components={renderers}>{markdown}</Markdown>
-      </article>
+      <div className="mt-8 space-y-6 text-[#717171]">
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-3">Cookies & Tracking Technology</h2>
+          <p>
+            The Site may use cookie and tracking technology depending on the features offered. Cookie and tracking technology are useful for gathering information such as browser type and operating system, tracking the number of visitors to the Site, and understanding how visitors use the Site. Cookies can also help customize the Site for visitors.
+          </p>
+        </section>
+      </div>
     </main>
   )
 };

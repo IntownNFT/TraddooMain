@@ -33,22 +33,25 @@ const TermsAndConditions = () => {
   return (
     <main className="mt-16">
       <SectionHeader
-        title="Terms and Conditions"
-        subtitle="Any question or remarks? Just write us a message!"
-        subtitleStyles="font-poppins font-medium !text-[#717171] mt-3"
+        title="Terms of Service"
+        subtitle="Please read these terms and conditions carefully"
+        subtitleStyles="font-poppins font-medium text-[#717171] mt-3"
       />
-      <article
-        className="mt-20 font-poppins bg-dark-grey border border-light-grey rounded-lg py-12 px-5 md:px-16"
-        id="markdown"
-      >
-        <Markdown
-          components={renderers}
-          remarkPlugins={[remarkGfm]}
-          className="[&_th]:p-4 [&_th]:bg-gray-900 [&_th]:text-left [&_td]:p-4 [&_td]:border-b [&_td]:border-gray-900 [&_table]:mt-6 [&_table]:mb-12 [&_table]:w-full"
-        >
-          {markdown}
-        </Markdown>
-      </article>
+      <div className="mt-8 space-y-6 text-[#717171]">
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-3">Acceptance of Terms</h2>
+          <p>
+            This "Agreement" contains the complete terms and conditions that apply to your participation in our site. If you wish to use the site including its tools and services please read these terms of use carefully. By accessing this site or using any part of the site or any content or services hereof, you agree to become bound by these terms and conditions.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-white mb-3">Modifications of Terms of Use</h2>
+          <p>
+            Amendments to this agreement can be made and effected by us from time to time without specific notice to your end. This Agreement as posted on the Site reflects the latest agreement and you should carefully review the same before you use our site.
+          </p>
+        </section>
+      </div>
     </main>
   );
 };

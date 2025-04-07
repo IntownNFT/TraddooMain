@@ -3,7 +3,6 @@ import StarIcon from "../../../assets/landing-page/home/star.svg";
 import Table from "./Table";
 import * as t1_row_data from "./Table1Rows.json";
 import * as t2_row_data from "./Table2Rows.json";
-import * as t3_row_data from "./Table3Rows.json";
 import { useEffect, useState } from "react";
 import StartChallengeForm from "./ChallengeForm";
 import SectionHeader from "../../../components/SectionHeader";
@@ -23,8 +22,8 @@ const Reminder = () => {
         </span>
       </h4>
       <p className="font-rubik text-[#93A1A6] mt-2">
-        CFDs are complex instruments and come with a high risk of losing money.
-        71% of retail investor lose when trading CFDs with Traddoo, LTD.
+        Futures trading involves substantial risk of loss and is not suitable for all investors. 
+        Please ensure you understand the risks before trading.
       </p>
     </div>
   );
@@ -43,7 +42,6 @@ type RowData = {
 
 const t1rowData: RowData = t1_row_data as RowData;
 const t2rowData: RowData = t2_row_data as RowData;
-const t3rowData: RowData = t3_row_data as RowData;
 
 const Challenge = () => {
   const [activeSize, setActiveSize] = useState(0);
@@ -53,43 +51,16 @@ const Challenge = () => {
   const [price, setPrice] = useState("");
 
   useEffect(() => {
-    // Set Header
-    switch (activeType) {
-      case 0:
-        setTableHead([" ", "Evaluation Phase 1", "Funded STP Account"]);
-        break;
-      default:
-        setTableHead([
-          " ",
-          "Evaluation Phase 1",
-          "Verification Phase 2",
-          "Funded STP Account",
-        ]);
-        break;
-    }
+    // Set Header - both types now have the same structure
+    setTableHead([" ", "Evaluation Phase", "Funded Account"]);
 
     // Set Rows
     let selectedAmount = "";
     switch (activeSize) {
       case 0:
-        selectedAmount = "5k";
-        break;
-      case 1:
-        selectedAmount = "10k";
-        break;
-      case 2:
-        selectedAmount = "25k";
-        break;
-      case 3:
-        selectedAmount = "50k";
-        break;
-      case 4:
         selectedAmount = "100k";
         break;
-      case 5:
-        selectedAmount = "150k";
-        break;
-      case 6:
+      case 1:
         selectedAmount = "200k";
         break;
     }
@@ -102,9 +73,6 @@ const Challenge = () => {
       case 1:
         setTableRows(t2rowData[data] as RowDataItem[]);
         break;
-      case 2:
-        setTableRows(t3rowData[data] as RowDataItem[]);
-        break;
     }
   }, [activeSize, activeType]);
 
@@ -113,26 +81,24 @@ const Challenge = () => {
   
     if (item) {
       const price = item.evaluationPhase1 || item.verificationPhase2 || item.fundedSTPAccount;
-  
       return price;
     }
   
-    return null; // Price not found
+    return null;
   };
 
   useEffect(() => {
-    const price = getPriceByName(tableRows,  'Price (Refundable Fee)');
-    if(price)
-      setPrice(price)
+    const priceRow = tableRows.find(row => row.name === 'Price');
+    if(priceRow)
+      setPrice(priceRow.evaluationPhase1);
     
   }, [activeSize, activeType, tableRows]);
 
   return (
     <div className="flex flex-col gap-3">
       <SectionHeader
-        title="Choose your Challenge"
-        subtitle="Before we allow you to trade with us, we need to be sure that you can
-        manage risk. For this reason, we developed Trading Objectives."
+        title="Choose your Evaluation"
+        subtitle="Simple evaluation process with EOD drawdown. No hidden rules or predatory restrictions."
       />
       <div className="flex flex-col gap-8">
         <div className="flex items-start flex-wrap lg:flex-nowrap">
